@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* 滿版黑 */
+        .header {
+            background-color: #272626;
+            padding: 1em 10px;
+        }
+
+        /* 固定寬度
+        wrap裡面的item 往兩端放且flex 
+        置中margin auto */
+        .header .wrap {
+            width: 1200px;
+            justify-content: space-between;
+            display: flex;
+          
+            margin: auto;
+        }
+        .header .item{
+            display: flex;
+            align-items: center;
+        }
+
+        /* 電話圖示和文字flex並排 垂直置中 */
+        .header .wrap .item {
+            display: flex;
+            align-items: center;
+        }
+
+        /* 小icon處理 */
+        .header .wrap .item .icon {
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            margin: 0 5px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header p {
+            color: #FFFFFF;
+            font-size: 22px;
+            display: inline-block;
+        }
+
+        .header img {
+            width: 25px;
+        }
+
+
+
+
+        /* ================== */
+
+
+        .path .wrap {
+            display: flex;
+            width: 1180px;
+            margin: auto;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .path .item {
+            display: flex;
+            align-items: center;
+
+        }
+        .path li{
+            padding: 0 20px;
+            /* line-height: 60px; */
+        }
+        .path h1 {
+            font-size: 42px;
+            color: #535353;
+            text-decoration: none;
+            color: #aaa;
+            /* line-height: 60px; */
+            
+        }
+        /* donate now */
+        .path .btn a{
+            /* display: inline-block; */
+            font-size: 15px;
+            color: #fa0;
+            border: 2px solid #fa0;
+            padding: 10px 25px;
+            /* line-height: 60px; */
+            /* padding: 0 20px; */
+            text-decoration: none;
+        }
+       
+        .path img{
+            width: 100%;
+        }
+
+        /* ==================================== */
+
+
+        .banner {
+
+            background-image: url("banner.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position:left left;
+           
+        }
+
+        .banner .wrap {
+            width: 1180px;
+            display: flex;
+            margin: auto;
+        }
+
+
+        .banner a {
+            display: inline-block;
+            font-size: 15px;
+            text-decoration: none;
+            border: 1px solid #fa0;
+            background-color: #fa0;
+            padding: 20px 50px;
+            color: #fff;
+            margin-bottom: 200px;
+            margin-top: 30px;
+        }
+
+
+
+        .banner .p1 {
+            font-size: 52px;
+            margin-top: 200px;
+        }
+
+        .banner .p2 {
+            font-size: 72px;
+            color: #7ABEE9;
+            margin-bottom: 10px;
+        }
+
+        .banner .p3 {
+            font-size: 25px;
+
+        }
+
+        /* ========================= */
+
+        .about .wrap{
+            width: 1180px;
+            display: flex;
+            
+            margin: auto;
+        }
+  
+        .about .p1 {
+            padding-top: 100px;
+            font-size: 52px;
+        }
+
+        .about .p2 {
+            padding-top: 30px;
+            font-size: 36px;
+            padding-bottom: 25px;
+            color: #7ABEE9;
+        }
+
+        .about .p3 {
+            padding-top: 20px;
+        }
+        .about .item{
+            width: 50%;
+        }
+        .about img{
+            width: 100%;
+        }
+
+
+
+        .about a {
+            text-decoration: none;
+            background-color: #fa0;
+            display: inline-block;
+            padding: 20px 50px;
+            margin: 40px;
+            color: #fff;
+        }
+
+        /* ======================= */
+
+        .picture {
+            background-color: #F9F9F9;
+        }
+
+        .picture .wrap {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .picture .item {
+            margin: 20px;
+        }
+
+        .picture .text {
+
+            text-align: center;
+            padding-top: 80px;
+            padding-bottom: 70px;
+
+        }
+
+        .picture .p1 {
+            font-size: 52px;
+            color: #535353;
+            padding-bottom: 10px;
+        }
+
+        .picture .p2 {
+            font-size: 32px;
+            color: #7ABEE9;
+        }
+
+        .picture .item p {
+            position: absolute;
+            bottom: 40px;
+            left: 130px;
+            font-size: 32px;
+            color: #fff;
+        }
+
+        .picture .item {
+            position: relative;
+            width: 340px;
+            height: 500px;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="wrap">
+            <div class="item">
+                <i class="fa-solid fa-phone" style="color: #e6ad0f;"></i>
+                <p>Toll-free:(123)456-7890</p>
+            </div>
+            <div class="item">
+                <div class="icon">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="path">
+        <div class="wrap">
+            <div class="item logo">
+                <a href=""><img src="asset 0.png" alt=""></a>
+                <h1>Anilove</h1>
+            </div>
+            <ul class="item nav">
+                <li href="">Home</li>
+                <li href="">About</li>
+                <li href="">Events</li>
+                <li href="">News</li>
+                <li href="">Contacts</li>
+            </ul>
+            <div class="item btn">
+                <a href="">DONATE NOW!</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="banner">
+        <div class="wrap">
+            <div class="item text">
+                <p class="p1">Animals Need</p>
+                <P class="p2">YOUR Help!</P>
+                <p class="p3">You can chip in with money & effort!</p>
+                <a href="">DONATE NOW!</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="about">
+        <div class="wrap">
+            <div class="item pic">
+                <img src="asset 1.jpeg" alt="">
+            </div>
+            <div class="item text">
+                <p class="p1">About Us</p>
+                <p class="p2">What Makes Us Care About Pets?</p>
+                <P class="p3">
+                    If it wasn’t for our founder’s childhood spent on a ranch in northern Texas, surrounded by
+                    domestic
+                    animals and pets all the time till she went to college – there might have been no Anilove animal
+                    shelter
+                    now. So as soon as she graduated with her Veterinary degree 12 years ago, she already knew what
+                    she will
+                    be doing for a living.
+                </P>
+                <P class="p3">
+                    All in all, with thousands of animals saved off the streets and cared for every year, we hope to
+                    encourage much more pet adoptions to happen!
+                </P>
+                <a href="">LEARN MORE</a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="picture">
+        <div class="text">
+            <p class="p1">How You Can Help</p>
+            <p class="p2">There Are Countless Ways You Can Join In & Help Us!</p>
+        </div>
+
+        <div class="wrap">
+            <div class="item">
+                <img src="pic1.jpeg" alt="">
+                <p>Volunteer</p>
+            </div>
+            <div class="item">
+                <img src="pic2.jpeg" alt="">
+                <p>adopt</p>
+            </div>
+            <div class="item">
+                <img src="pic3.jpeg" alt="">
+                <p>sponsor</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
