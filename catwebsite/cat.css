@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
+/* 滿版黑 */
+.header {
+    background-color: #272626;
+    padding: 0 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+/* 固定寬度
+        wrap裡面的item 往兩端放且flex 
+        置中margin auto */
+.header .wrap {
+    width: 1200px;
+    justify-content: space-between;
+    display: flex;
+   
+    margin: auto;
+}
+
+.header .item {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* 小icon處理 */
+    .icon {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    margin: 0 3px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+i{
+   font-size: 1px;
+}
+
+.header p {
+    color: #FFFFFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    font-weight: 300;
+
+}
+
+
+.header img {
+    width: 25px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* ================== */
+
+
+.path .wrap {
+    display: flex;
+    width: 1180px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 28px;
+}
+
+.path .item {
+    display: flex;
+    align-items: center;
+
+}
+
+.path li {
+   
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0 27px;
+    letter-spacing: 1px;
+    
+   
+}
+.phone i{
+    font-size: 16px;
+    margin-right: 10px;
+}
+.path h1 {
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #535353;
+    text-decoration: none;
+    
+    padding-left: 15px;
+    
+
+}
+
+/* donate now */
+.path .btn a {
+    /* display: inline-block; */
+    font-size: 12px;
+    color: #ff9933;
+    border: 2px solid #ff9933;
+    padding: 13px 30px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    line-height: 20px;
+    
+}
+
+.path img {
+    width: 100%;
+}
+
+/* ==================================== */
+
+
+.banner {
+
+    background-image: url("banner.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 105px 15px;
+
+}
+
+.banner .wrap {
+    width: 1180px;
+    display: flex;
+    margin: auto;
+}
+
+
+.banner a {
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid #ff9933;
+    background-color: #ff9933;
+    padding: 20px 54px;
+    color: #fff;
+    margin-bottom: 200px;
+    margin-top: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    line-height: 24px;
+}
+
+.banner h2{
+    margin-top: 100px;
+    line-height: 1.2;
+}
+
+.banner h1{
+    line-height: 1.1;
+}
+
+h1{
+    font-size: 80px;
+    font-weight: 700;
+    color: #7abee9;
+}
+
+h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: #535353;
+}
+h3{
+    color: #535353;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+
+
+/* ========================= */
+
+.about .wrap {
+    width: 1180px;
+    display: flex;
+
+    margin: auto;
+}
+
+.about h2 {
+    padding-top: 100px;
+    font-size: 52px;
+}
+
+.about .p2 {
+    padding-top: 30px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    color: #7abee9;
+    font-size: 30px;
+    line-height: 1.5;
+    
+}
+
+.about .p3 {
+    padding-top: 20px;
+    color: #8d8d8d;
+}
+
+.about .item {
+    width: 50%;
+}
+
+.about img {
+    width: 100%;
+}
+
+
+
+.about a {
+    text-decoration: none;
+   font-size: 14px;
+    display: inline-block;
+    padding: 20px 54px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    margin: 40px;
+    color: #fff;
+    font-weight: 700;
+    background-color: #ff9933;
+}
+
+/* ======================= */
+
+.picture {
+    background-color: #F9F9F9;
+}
+
+.picture .wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.picture .item {
+    margin: 5px;
+   
+   
+}
+.picture img{
+    width: 100%;
+}
+
+.picture .text {
+
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 70px;
+
+}
+
+.picture .p1 {
+    font-size: 52px;
+    color: #535353;
+    padding-bottom: 10px;
+}
+
+.picture .p2 {
+    font-size: 34px;
+    color: #7ABEE9;
+}
+
+.picture .item p {
+    position: absolute;
+    bottom: 80px;
+    left: 130px;
+    font-size: 32px;
+    color: #fff;
+}
+
+.picture .item {
+    position: relative;
+    width: 340px;
+    height: 500px;
+    padding: 0 10px;
+}
