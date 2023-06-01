@@ -130,16 +130,17 @@ body {
 
 
 .banner {
-
+   
     background-image: url("banner.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding: 105px 15px;
+    padding: 30px 15px;
 
 }
 
 .banner .wrap {
+  
     width: 1180px;
     display: flex;
     margin: auto;
@@ -154,7 +155,7 @@ body {
     background-color: #ff9933;
     padding: 20px 54px;
     color: #fff;
-    margin-bottom: 200px;
+    margin-bottom: 145px;
     margin-top: 40px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -163,7 +164,7 @@ body {
 }
 
 .banner h2{
-    margin-top: 100px;
+    margin-top: 165px;
     line-height: 1.2;
 }
 
@@ -219,12 +220,15 @@ h3{
     color: #8d8d8d;
 }
 
-.about .item {
+.about .pic{
+    width: 50%;
+}
+.about .text{
     width: 50%;
 }
 
 .about img {
-    width: 100%;
+     width: 100%;
 }
 
 
@@ -264,6 +268,7 @@ h3{
 .picture img{
     width: 100%;
 }
+
 
 .picture .text {
 
