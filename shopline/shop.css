@@ -1,3 +1,5 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
 a{
     display: inline-block;
     text-decoration: none;
@@ -19,12 +21,12 @@ h3{
     font-size: 175%;
     font-weight: bold;
 }
-h5{
+/* h5{
     font-size: 125%;
     margin-bottom: 16px;
     font-weight: bold;
     line-height: 1.5;
-}
+} */
 
 .about{
     background-color: #F7F8F9;
@@ -41,6 +43,8 @@ h5{
 .about p{
     margin-top: 15px;
 }
+
+
 
 .introduction .item{
     display: flex;
@@ -73,11 +77,13 @@ ul{
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
+
 }
 li{
     line-height: 27px;
     margin-bottom: 8px;
     min-width: 248px;
+    
 }
 .introduction h3{
     margin-bottom: 15px;
@@ -88,6 +94,46 @@ li{
     margin-bottom: 24px;
     line-height: 28px;
 }
+
+
+.introduction li::before{
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #0061FF;
+   margin-right: 10px;
+}
+
+.introduction a{
+    position: relative;
+    margin-right: 5px;
+}
+
+.introduction a::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #0061FF;
+    position: absolute;
+    margin-top: 5px;
+
+}
+
+.introduction i{
+    color: #0061FF;
+}
+
+.introduction i:hover{
+    padding-left: 5px;
+    transition: .3s ;
+}
+
+
+
+
 
 .more{
     color: #052855;
