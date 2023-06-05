@@ -20,13 +20,19 @@ h2 {
 }
 
 h3 {
-    color: #535353;
+    color: #7abee9;
     font-weight: 400;
     font-size: 30px;
 }
 
 a {
     text-decoration: none;
+}
+
+.wrap {
+    width: 1170px;
+    display: flex;
+    margin: auto;
 }
 
 /* 滿版黑 */
@@ -38,15 +44,9 @@ a {
     align-items: center;
 }
 
-/* 固定寬度
-        wrap裡面的item 往兩端放且flex 
-        置中margin auto */
-.header .wrap {
-    width: 1200px;
-    justify-content: space-between;
-    display: flex;
 
-    margin: auto;
+.header .wrap {
+    justify-content: space-between;
 }
 
 .header .item {
@@ -54,15 +54,11 @@ a {
     align-items: center;
 }
 
-.header .icon:hover {
-    background-color: #ff9933;
-    transition: 0.4s;
+i {
+    font-size: 1px;
 }
 
-
-
-/* 小icon處理 */
-.icon {
+.header .icon {
     width: 20px;
     height: 20px;
     background-color: #fff;
@@ -73,9 +69,11 @@ a {
     align-items: center;
 }
 
-i {
-    font-size: 1px;
+.header .icon:hover {
+    background-color: #ff9933;
+    transition: 0.4s;
 }
+
 
 .header span {
     color: #fff;
@@ -108,17 +106,14 @@ i {
 
 
 .path .wrap {
-    display: flex;
-    width: 1180px;
-    margin: auto;
     justify-content: space-between;
     padding: 28px;
-    /* align-items: center; */
 }
 
 .path .item {
     display: flex;
     align-items: center;
+   
 
 }
 
@@ -137,18 +132,7 @@ i {
     position: relative;
 }
 
-/* .path ul > li:first-child::after{
-    border : 1.5px solid #fa0;
-    background-color: #fa0;
-   content: '';
-   
-    height: 3px;
-    margin:10px auto 0px;
-    margin-top: 10px; 
-    margin-bottom: 1px;
-   width: 50px;
-   display: block;
-} */
+
 
 .path .home::after {
     content: '';
@@ -158,30 +142,27 @@ i {
     width: 100%;
     height: 3px;
     position: absolute;
-    margin: 20px 0px;
     left: 0px;
+    margin: 20px 0px;
+
 
 
 }
 
 
 
-.path .nav a:hover::after {
+.path .nav li:hover a::after {
     content: '';
     display: block;
     background-color: #ff9933;
-    /* width: 50px; */
     width: 100%;
     height: 3px;
     position: absolute;
     margin: 20px 0px;
     left: 0px;
-    /* transition: 0.1s; */
 }
 
-/* .path li{
-    display: inline-block;
-} */
+
 
 
 
@@ -207,7 +188,6 @@ i {
     color: #ff9933;
     border: 2px solid #ff9933;
     padding: 13px 30px;
-
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
@@ -220,11 +200,13 @@ i {
     background-color: #7abee9;
     color: #fff;
     border: 2px solid #7abee9;
+    /* transition: 0.3s; */
 }
 
 .path img {
     width: 100%;
 }
+
 
 /* ==================================== */
 
@@ -239,12 +221,7 @@ i {
 
 }
 
-.banner .wrap {
 
-    width: 1180px;
-    display: flex;
-    margin: auto;
-}
 
 
 .banner a {
@@ -252,7 +229,7 @@ i {
     font-size: 14px;
     text-decoration: none;
     background-color: #ff9933;
-    padding: 20px 54px;
+    padding: 21px 55px;
     color: #fff;
     margin-bottom: 145px;
     margin-top: 40px;
@@ -262,8 +239,10 @@ i {
     line-height: 24px;
 }
 
-.banner a:hover, .about a:hover{
+.banner a:hover,
+.about a:hover {
     background-color: #000000;
+    transition: .3s;
 }
 
 .banner h2 {
@@ -289,7 +268,6 @@ i {
 
 .about .wrap {
     width: 1180px;
-    display: flex;
     margin: 90px auto 0px;
 }
 
@@ -300,10 +278,7 @@ i {
 
 .about h3 {
     padding-top: 30px;
-    font-weight: 400;
     padding-bottom: 10px;
-    color: #7abee9;
-    font-size: 30px;
     line-height: 1.5;
 
 }
@@ -350,23 +325,7 @@ i {
 }
 
 
-
-.picture .wrap {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-}
-
-
-
-.picture img {
-    width: 100%;
-}
-
-
 .picture .text {
-
     text-align: center;
     padding-top: 80px;
     padding-bottom: 70px;
@@ -377,10 +336,7 @@ i {
     padding-bottom: 10px;
 }
 
-.picture h3 {
 
-    color: #7ABEE9;
-}
 
 .picture a {
     position: absolute;
@@ -390,7 +346,7 @@ i {
     color: #fff;
 }
 
-.picture a:hover{
+.picture a:hover {
     color: #ff9933;
 }
 
@@ -399,11 +355,12 @@ i {
 .picture .item {
     position: relative;
     width: 370px;
-    height: 451px;  
+    height: 451px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0px 15px;
+  
 }
 
 /* .picture .item:hover{
@@ -411,12 +368,14 @@ i {
 
 } */
 
-.volunteer{
+.volunteer {
     background-image: url("pic1.jpeg");
 }
-.adopt{
+
+.adopt {
     background-image: url("pic2.jpeg");
 }
-.sponsor{
+
+.sponsor {
     background-image: url("pic3.jpeg");
 }
