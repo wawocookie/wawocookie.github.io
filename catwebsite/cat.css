@@ -108,6 +108,7 @@ i {
 .path .wrap {
     justify-content: space-between;
     padding: 28px;
+   
 }
 
 .path .item {
@@ -130,6 +131,7 @@ i {
     margin: 0 27px;
     letter-spacing: 1px;
     position: relative;
+  
 }
 
 
@@ -144,7 +146,8 @@ i {
     position: absolute;
     left: 0px;
     margin: 20px 0px;
-
+    transition: 1s;
+   
 
 
 }
