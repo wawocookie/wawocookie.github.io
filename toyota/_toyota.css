@@ -1,0 +1,183 @@
+@import url("../reset.css");
+
+
+.item {
+    width: 960px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 170px;
+}
+
+.title {
+    color: #fff;
+    background-color: #000000;
+    width: 355px;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+
+
+}
+
+section:nth-of-type(even) .title {
+    right: 0;
+}
+
+
+.title-num {
+    background-color: #BB0404;
+
+
+}
+
+.title-desc {
+    margin: 25px 20px 0;
+    padding-bottom: 50px;
+}
+
+.title h1 {
+    display: inline-block;
+    font-size: 50px;
+    margin: 0 20px 40px;
+
+
+}
+
+.title span {
+    font-size: 140px;
+    writing-mode: vertical-rl;
+    margin-bottom: -50px;
+    line-height: 0.7em;
+}
+
+.title .title-desc h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.title p {
+    font-size: 19px;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+
+}
+
+
+.gray {
+    background-color: #efefef;
+    position: absolute;
+}
+
+section:nth-of-type(odd) .gray {
+
+    width: 439px;
+    height: 290px;
+    margin-left: auto;
+    right: 0;
+    top: 40px;
+}
+
+section:nth-of-type(even) .gray {
+
+    width: 518px;
+    height: 441px;
+    right: 180px;
+    top: 30px;
+
+}
+
+
+
+.pic {
+    width: 695px;
+    margin-right: 75px;
+    top: 135px;
+    left: 180px;
+    position: relative;
+    z-index: 1;
+
+}
+
+
+
+section:nth-of-type(even) .pic {
+    left: 0;
+}
+
+
+.pic .youtube {
+    position: absolute;
+    top: 48%;
+    right: -10px;
+}
+
+.item:nth-child(even) .youtube {
+    left: -10px;
+}
+
+
+.pic .car {
+    width: 695px;
+    vertical-align: top;
+
+}
+
+
+.description {
+    background-color: #e2e2e2;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    max-width: 682px;
+    margin: 0 0 0 56px;
+    z-index: 1;
+    position: relative;
+    top: 100px;
+
+}
+
+section:nth-of-type(even) .description {
+    margin-left: auto;
+}
+
+.description h3 {
+    color: #BB0404;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.description h3::after {
+    content: '';
+    display: inline-block;
+    background-color: #BB0404;
+    width: 450px;
+    height: 1.5px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.description h4 {
+    color: #fff;
+    background-color: #000000;
+    padding: 4px 8px;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.description li li::before {
+    background-color: #BB0404;
+    width: 1em;
+    height: 1em;
+    content: '';
+    display: inline-block;
+    vertical-align: text-top;
+    transform: scale(0.2);
+
+}
+
+.description li li {
+    padding-left: 1.5em;
+    text-indent: -1em;
+    line-height: 1.2em;
+}
