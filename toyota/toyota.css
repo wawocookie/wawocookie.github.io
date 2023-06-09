@@ -28,7 +28,9 @@ section:nth-of-type(even) .title {
 
 .title-num {
     background-color: #BB0404;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
 }
 
@@ -40,15 +42,12 @@ section:nth-of-type(even) .title {
 .title h1 {
     display: inline-block;
     font-size: 50px;
-    margin: 0 20px 40px;
-
-
+    margin: auto;
 }
 
 .title span {
     font-size: 140px;
     writing-mode: vertical-rl;
-    margin-bottom: -50px;
     line-height: 0.7em;
 }
 
