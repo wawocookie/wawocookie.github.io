@@ -1,5 +1,6 @@
 * {
     /* outline: 2px solid red; */
+    color: #000000;
 }
 h3{
     font-size: 18px;
@@ -12,8 +13,9 @@ a:hover{
     filter:opacity(0.7) ;
 }   
 a:visited{
-    color: #000000;
+    
 }
+
 
 .more span::after{
     width: 20px;
