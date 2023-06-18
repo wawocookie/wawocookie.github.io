@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="myInput">
+    <button id="myButton">點擊我</button>
+    <script>
+        // 對 btn DOM物件 新增事件監聽, 監聽 click(點擊事件),
+        // 當事件被觸發時, 執行 addEventListener 的第2個參數的回呼函式
+        const button = document.getElementById("myButton");
+
+        button.addEventListener("click", function () {
+
+            const input = document.getElementById("myInput");
+            // 將 input 的 value 指派給 inputValue
+            const inputValue = input.value;
+
+            console.log(inputValue);
+        });
+
+    </script>
+</body>
+
+</html>
