@@ -4,6 +4,7 @@
  const guessBtn=document.getElementById('guess_btn')
  const restartBtn=document.getElementById('restart_btn')
  const showAnswerBtn=document.querySelector('#show_answer_btn')
+ const abarea=document.querySelector('.ab')
 
  //宣告變數
  let minNum,maxNum,answerNum,guessNum
@@ -20,41 +21,39 @@
 
  guessBtn.addEventListener('click',guess)
 
- window.addEventListener('load',function(){
-    console.log('load event')
-    init()
- })
-
- window.addEventListener('DOMContentLoaded',function(){
-    console.log('DOMContentLoaded event')
-  
- })
- 
-
  window.onload=function(){
      init()
  }
 
  function guess(){
    
+    
+   
+    //去除文字前後空白
      const val=guessInput.value.trim()
+     //CHECK不為空,是數字,第一個數字不是0
      if(val ===''||isNaN(val) || val[0] ==='0'){
          alert('請輸入正確的數字')
          guessInput.value=''
          return 
      }
+     
+     const guessInput_Array=val.split('')
+     
+     let answerNum_Array=answerNum.toString()
+     answerNum_Array=answerNum_Array.split('')
+  
+
+
 
      guessNum=parseInt(val)
 
-     checkNumRange()
+     if( checkNumRange())
+        {
+            return;
+        }
 
-     if(guessNum<minNum||guessNum>maxNum){
-         showHint()
-         guessInput=''
-         alert('請確認輸入範圍')
-         // return '請輸入輸入範圍'
-         //離開guess
-     }
+        checkAB(guessInput_Array,answerNum_Array)
 
      if(guessNum ===answerNum){
          alert(`答案是${answerNum}`)
@@ -69,8 +68,6 @@
      else if(guessNum>answerNum){
          maxNum=guessNum
       
-     
-
      }
      guessInput.value=''
      showHint()
@@ -93,6 +90,7 @@
 
  function init(){
      
+    abarea.innerHTML=`0A 0B`
      guessInput.value=''
      minNum=1
      maxNum=100
@@ -101,9 +99,7 @@
     
  }
 
- // function generateAnswer() {
- //     return getRandomIntInclusive(1,100)
- // }
+
 
  function getRandomIntInclusive(min, max) {
      min = Math.ceil(min);
@@ -111,7 +107,25 @@
      return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
  }
 
- 
+ function checkAB(guessInput_Array,answerNum_Array){
+
+    let a=0,b=0;
+    for(let index in guessInput_Array)
+    {
+     
+           if(guessInput_Array[index]==answerNum_Array[index])
+           {
+               a++
+           }
+           else if(answerNum_Array.find(item=>guessInput_Array[index]==item))
+           {
+               b++
+           }
+      
+    }
+
+   abarea.innerHTML=`${a}A ${b}B`
+ }
 
 
 

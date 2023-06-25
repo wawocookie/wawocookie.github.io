@@ -6,19 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            
+        }
         .game-board{
             margin: auto;
-            width: 200px;
+            width: 500px;
             text-align: center;
+            border: 3px solid black;
+            border-radius: 5px;
         }
         .game-board input{
-            width: 100%;
+           
             padding: 0;
             box-sizing: border-box;
+            border-radius: 5px;
         }
         .game-board .hint{
             margin-top: 10px;
-            color: red;
+            color: green;
         }
         .btn-group{
             width: 100%;
@@ -26,14 +32,20 @@
             display: flex;
             justify-content: space-between;
         }
+        .ab{
+            font-size: 20px;
+        }
     </style>
 </head>
 
 <body>
     <div class="game-board">
-        <h1>猜數字遊戲</h1>
+       
+        <h1>Guess Number!</h1>
+        <p class="ab">0A 0B</p>
         <input type="text" id="guess_input" placeholder="請輸入數字">
         <div class="hint"></div>
+      
         <div class="btn-group">
             <button id="guess_btn">猜！</button>
             <button id="restart_btn">重新開始</button>

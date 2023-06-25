@@ -1,0 +1,187 @@
+body{
+    color: #052855;
+}
+.main-header a{
+    color: #052855;
+}
+.main-header,
+.kv
+{
+    background-color: #EBF1F8;
+}
+.main-header .login{
+    font-size: 14px;
+}
+.main-header .lg img{
+    width: 14px;
+}
+.navbar-brand img{
+    width: 160px;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+.pic img{
+    object-fit: cover;
+}
+
+.blank{
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(180deg, #F6F9FC 0%, #ECF2F9 47.92%);
+}
+.kv .row{
+    padding-top: 50px;
+}
+.kv .pic{
+ 
+    width: 460px;
+    height: 500px;
+    border: 8px solid #CDDFEE;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-radius: 250px 250px 0px 0px;
+    overflow: hidden;
+ 
+}
+.kv .try-btn{
+    width: 320px;
+    height: 48px;
+}
+
+.kv .memo{
+    color: #5D6A7A;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.main-header .try-btn{
+    width: 144px;
+    height: 48px;
+}
+.slg{
+    background-color: #F7F8F9;
+}
+.slg h1{
+    font-size: 32px;
+}
+
+
+.special-list li{
+    position: relative;
+}
+
+.special-list li::before{
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #0061FF;
+    left:-8px;
+    top:13px;
+    position: absolute;
+}
+.special-list a{
+    transition: 0.3s;
+}
+.special-list a:hover i{
+    margin-left: 5px;
+}
+
+.special-list .item:nth-child(odd) > .row{
+    flex-direction: row-reverse;
+}
+.special-list .item:not(:first-child){
+    margin-top: 80px;
+}
+
+.more{
+    background-color: #F7F8F9;
+}
+.more h1{
+    font-size: 28px;
+}
+.more h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.brand a{
+    width: 147px;
+    height: 72px;
+    transition: 0.3s;
+}
+.brand  a:not(:first-child) 
+{
+    filter:opacity(0.3) ;
+}
+
+.brand .row a:hover{
+    filter:opacity(1) ;
+}
+.brand  p{
+    margin-top: 60px;
+}
+.brand h1{
+    font-size: 28px;
+}
+.brand .person{
+    font-size: 12px;
+   
+    
+}
+.brand span{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.try{
+    background-color: #EBF1F8;
+}
+
+.try .container button{
+    width: 160px;
+    height: 48px;
+}
+.try h1{
+    font-size: 40px;
+}
+.try button{
+   margin-top: 20px;
+}
+
+footer{
+    background-color: #00142D;
+  
+}
+h1{
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+.slg{
+    padding: 64px 0;
+}
+
+.special-list,
+.more,
+.brand,
+.try{
+    padding: 64px 0;
+}
+
+
+
+@media screen and (min-width:768px)
+{
+    .container{
+        --bs-gutter-x: 15rem;
+        --bs-gutter-y: 0;
+    }
+    .kv .pic{
+        margin-left: 50px;
+    }
+   
+}
