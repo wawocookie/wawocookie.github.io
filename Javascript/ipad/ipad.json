@@ -1,0 +1,50 @@
+{
+    "iphone":[
+        {"color":"太空灰色","storage":"64GB<br>NT$19,900 起","network":"Wi-Fi"},
+        {"color":"太空灰色","storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路"},
+        {"color":"太空灰色","storage":"256GB<br>NT$24,900 起","network":"Wi-Fi"},
+        {"color":"太空灰色","storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路"},
+
+        {"color":"藍色","storage":"64GB<br>NT$19,900 起","network":"Wi-Fi"},
+        {"color":"藍色","storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路"},
+        {"color":"藍色","storage":"256GB<br>NT$24,900 起","network":"Wi-Fi"},
+        {"color":"藍色","storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路"},
+    ],
+    "ipad":[
+        {"color":"太空灰色","storage":"64GB<br>NT$19,900 起","network":"Wi-Fi"},
+        {"color":"太空灰色","storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路"},
+        {"color":"太空灰色","storage":"256GB<br>NT$24,900 起","network":"Wi-Fi"},
+        {"color":"太空灰色","storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路"},
+
+        {"color":"藍色","storage":"64GB<br>NT$19,900 起","network":"Wi-Fi"},
+        {"color":"藍色","storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路"},
+        {"color":"藍色","storage":"256GB<br>NT$24,900 起","network":"Wi-Fi"},
+        {"color":"藍色","storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路"},
+
+        {"color":"粉紅色","storage":"64GB<br>NT$19,900 起","network":"Wi-Fi"},
+        {"color":"粉紅色","storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路"},
+        {"color":"粉紅色","storage":"256GB<br>NT$24,900 起","network":"Wi-Fi"},
+        {"color":"粉紅色","storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路"},
+
+        {"color":"紫色","storage":"64GB<br>NT$19,900 起","network":"Wi-Fi"},
+        {"color":"紫色","storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路"},
+        {"color":"紫色","storage":"256GB<br>NT$24,900 起","network":"Wi-Fi"},
+        {"color":"紫色","storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路"},
+
+        {"color":"星光色","storage":"64GB<br>NT$19,900 起","network":"Wi-Fi"},
+        {"color":"星光色","storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路"},
+        {"color":"星光色","storage":"256GB<br>NT$24,900 起","network":"Wi-Fi"},
+        {"color":"星光色","storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路"}
+    ],
+    "imac":[
+        {"color":"紫色","storage":"64GB<br>NT$19,900 起","network":"Wi-Fi"},
+        {"color":"紫色","storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路"},
+        {"color":"紫色","storage":"256GB<br>NT$24,900 起","network":"Wi-Fi"},
+        {"color":"紫色","storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路"},
+
+        {"color":"星光色","storage":"64GB<br>NT$19,900 起","network":"Wi-Fi"},
+        {"color":"星光色","storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路"},
+        {"color":"星光色","storage":"256GB<br>NT$24,900 起","network":"Wi-Fi"},
+        {"color":"星光色","storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路"}
+    ]
+}
