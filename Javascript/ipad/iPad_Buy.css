@@ -12,7 +12,7 @@ input:checked+label {
 }
 
 input {
-    display: none;
+    /* display: none; */
 }
 
 .container label {
