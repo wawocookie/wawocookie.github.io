@@ -42,9 +42,9 @@
             {"color":"太空灰色","pictures":["gray.jpeg","gray2.jpeg","gray3.jpeg"], "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路","price":29900},
 
             {"color":"藍色","pictures":["blue.jpeg","blue2.jpeg","blue3.jpeg"], "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路","price":24900},
-            {"color":"藍色","picture":["blue.jpeg","blue2.jpeg","blue3.jpeg"], "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi","price":19900},
-            {"color":"藍色","picture":["blue.jpeg","blue2.jpeg","blue3.jpeg"], "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi","price":24900},
-            {"color":"藍色","picture":["blue.jpeg","blue2.jpeg","blue3.jpeg"], "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路","price":29900},
+            {"color":"藍色","pictures":["blue.jpeg","blue2.jpeg","blue3.jpeg"], "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi","price":19900},
+            {"color":"藍色","pictures":["blue.jpeg","blue2.jpeg","blue3.jpeg"], "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi","price":24900},
+            {"color":"藍色","pictures":["blue.jpeg","blue2.jpeg","blue3.jpeg"], "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路","price":29900},
 
             {"color":"粉紅色","pictures":["pink.jpeg","pink2.jpeg","pink3.jpeg"], "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi","price":19900},
             {"color":"粉紅色","pictures":["pink.jpeg","pink2.jpeg","pink3.jpeg"], "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路","price":24900},
