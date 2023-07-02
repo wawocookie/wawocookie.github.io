@@ -1,56 +1,128 @@
 {
-    "iphone":[
-        {"color":"太空灰色","picture":"gray.jpeg", "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi","price":19900},
-        {"color":"太空灰色","picture":"gray.jpeg", "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路","price":24900},
-        {"color":"太空灰色","picture":"gray.jpeg", "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi","price":24900},
-        {"color":"太空灰色","picture":"gray.jpeg", "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路","price":29900},
+    "iphone":{
+        "imgs":["none.jpeg","none2.jpeg"],
+        "products":
+        [
+            {"color":"藍色","pictures":["blue.jpeg","blue2.jpeg","blue3.jpeg"], "storage":"128GB","price":27900},
+            {"color":"藍色","pictures":["blue.jpeg","blue2.jpeg","blue3.jpeg"], "storage":"256GB","price":31400},
+            {"color":"藍色","pictures":["blue.jpeg","blue2.jpeg","blue3.jpeg"], "storage":"512GB","price":38400},
 
-        {"color":"藍色","picture":"gray.jpeg", "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路","price":24900},
-        {"color":"藍色","picture":"gray.jpeg", "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi","price":19900},
-        {"color":"藍色","picture":"gray.jpeg", "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi","price":24900},
-        {"color":"藍色","picture":"gray.jpeg", "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路","price":29900},
+            {"color":"紫色","pictures":["purple.jpeg","purple2.jpeg","purple3.jpeg"], "storage":"128GB","price":27900},
+            {"color":"紫色","pictures":["purple.jpeg","purple2.jpeg","purple3.jpeg"], "storage":"256GB","price":31400},
+            {"color":"紫色","pictures":["purple.jpeg","purple2.jpeg","purple3.jpeg"], "storage":"512GB","price":38400},
 
-        {"color":"粉紅色","picture":"gray.jpeg", "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi","price":19900},
-        {"color":"粉紅色","picture":"gray.jpeg", "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路","price":24900},
-        {"color":"粉紅色","picture":"gray.jpeg", "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi","price":24900},
-        {"color":"粉紅色","picture":"gray.jpeg", "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路","price":29900},
+            {"color":"黃色","pictures":["yellow.jpeg","yellow2.jpeg","yellow3.jpeg"], "storage":"128GB","price":27900},
+            {"color":"黃色","pictures":["yellow.jpeg","yellow2.jpeg","yellow3.jpeg"], "storage":"256GB","price":31400},
+            {"color":"黃色","pictures":["yellow.jpeg","yellow2.jpeg","yellow3.jpeg"], "storage":"512GB","price":38400},
 
-    ],
-    "ipad":[
-        {"color":"太空灰色","picture":"gray.jpeg", "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi","price":19900},
-        {"color":"太空灰色","picture":"gray.jpeg", "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路","price":24900},
-        {"color":"太空灰色","picture":"gray.jpeg", "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi","price":24900},
-        {"color":"太空灰色","picture":"gray.jpeg", "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路","price":29900},
+            {"color":"午夜色","pictures":["black.jpeg","black2.jpeg","black3.jpeg"], "storage":"128GB","price":27900},
+            {"color":"午夜色","pictures":["black.jpeg","black2.jpeg","black3.jpeg"], "storage":"256GB","price":31400},
+            {"color":"午夜色","pictures":["black.jpeg","black2.jpeg","black3.jpeg"], "storage":"512GB","price":38400},
 
-        {"color":"藍色","picture":"gray.jpeg", "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路","price":24900},
-        {"color":"藍色","picture":"gray.jpeg", "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi","price":19900},
-        {"color":"藍色","picture":"gray.jpeg", "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi","price":24900},
-        {"color":"藍色","picture":"gray.jpeg", "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路","price":29900},
+            {"color":"午夜色","pictures":["white.jpeg","white2.jpeg","white3.jpeg"], "storage":"128GB","price":27900},
+            {"color":"午夜色","pictures":["white.jpeg","white2.jpeg","white3.jpeg"], "storage":"256GB","price":31400},
+            {"color":"午夜色","pictures":["white.jpeg","white2.jpeg","white3.jpeg"], "storage":"512GB","price":38400},
 
-        {"color":"粉紅色","picture":"gray.jpeg", "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi","price":19900},
-        {"color":"粉紅色","picture":"gray.jpeg", "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路","price":24900},
-        {"color":"粉紅色","picture":"gray.jpeg", "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi","price":24900},
-        {"color":"粉紅色","picture":"gray.jpeg", "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路","price":29900},
+            {"color":"紅色","pictures":["red.jpeg","red2.jpeg","red3.jpeg"], "storage":"128GB","price":27900},
+            {"color":"紅色","pictures":["red.jpeg","red2.jpeg","red3.jpeg"], "storage":"256GB","price":31400},
+            {"color":"紅色","pictures":["red.jpeg","red2.jpeg","red3.jpeg"], "storage":"512GB","price":38400}
+  
+        ]
+    
+    },
+    
+    
+    "ipad":{
+        "imgs":["none.jpeg","none2.jpeg"],
+        "products":
+        [
+            {"color":"太空灰色","pictures":["gray.jpeg","gray2.jpeg","gray3.jpeg"], "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi","price":19900},
+            {"color":"太空灰色","pictures":["gray.jpeg","gray2.jpeg","gray3.jpeg"], "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路","price":24900},
+            {"color":"太空灰色","pictures":["gray.jpeg","gray2.jpeg","gray3.jpeg"], "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi","price":24900},
+            {"color":"太空灰色","pictures":["gray.jpeg","gray2.jpeg","gray3.jpeg"], "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路","price":29900},
 
-        {"color":"紫色","picture":"gray.jpeg", "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi","price":19900},
-        {"color":"紫色","picture":"gray.jpeg", "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路","price":24900},
-        {"color":"紫色","picture":"gray.jpeg", "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi","price":24900},
-        {"color":"紫色","picture":"gray.jpeg", "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路","price":29900},
+            {"color":"藍色","pictures":["blue.jpeg","blue2.jpeg","blue3.jpeg"], "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路","price":24900},
+            {"color":"藍色","pictures":["blue.jpeg","blue2.jpeg","blue3.jpeg"], "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi","price":19900},
+            {"color":"藍色","pictures":["blue.jpeg","blue2.jpeg","blue3.jpeg"], "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi","price":24900},
+            {"color":"藍色","pictures":["blue.jpeg","blue2.jpeg","blue3.jpeg"], "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路","price":29900},
 
-        {"color":"星光色","picture":"gray.jpeg", "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi","price":19900},
-        {"color":"星光色","picture":"gray.jpeg", "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路","price":24900},
-        {"color":"星光色","picture":"gray.jpeg", "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi","price":24900},
-        {"color":"星光色","picture":"gray.jpeg", "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路","price":29900}
-    ],
-    "imac":[
-        {"color":"紫色","picture":"gray.jpeg", "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi","price":19900},
-        {"color":"紫色","picture":"gray.jpeg", "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路","price":24900},
-        {"color":"紫色","picture":"gray.jpeg", "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi","price":24900},
-        {"color":"紫色","picture":"gray.jpeg", "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路","price":29900},
+            {"color":"粉紅色","pictures":["pink.jpeg","pink2.jpeg","pink3.jpeg"], "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi","price":19900},
+            {"color":"粉紅色","pictures":["pink.jpeg","pink2.jpeg","pink3.jpeg"], "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路","price":24900},
+            {"color":"粉紅色","pictures":["pink.jpeg","pink2.jpeg","pink3.jpeg"], "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi","price":24900},
+            {"color":"粉紅色","pictures":["pink.jpeg","pink2.jpeg","pink3.jpeg"], "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路","price":29900},
 
-        {"color":"星光色","picture":"gray.jpeg", "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi","price":19900},
-        {"color":"星光色","picture":"gray.jpeg", "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路","price":24900},
-        {"color":"星光色","picture":"gray.jpeg", "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi","price":24900},
-        {"color":"星光色","picture":"gray.jpeg", "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路","price":29900}
-    ]
+            {"color":"紫色","pictures":["purple.jpeg","purple2.jpeg","purple3.jpeg"], "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi","price":19900},
+            {"color":"紫色","pictures":["purple.jpeg","purple2.jpeg","purple3.jpeg"], "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路","price":24900},
+            {"color":"紫色","pictures":["purple.jpeg","purple2.jpeg","purple3.jpeg"], "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi","price":24900},
+            {"color":"紫色","pictures":["purple.jpeg","purple2.jpeg","purple3.jpeg"], "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路","price":29900},
+
+            {"color":"星光色","pictures":["starlight.jpeg","starlight2.jpeg","starlight3.jpeg"], "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi","price":19900},
+            {"color":"星光色","pictures":["starlight.jpeg","starlight2.jpeg","starlight3.jpeg"], "storage":"64GB<br>NT$19,900 起","network":"Wi-Fi + 行動網路","price":24900},
+            {"color":"星光色","pictures":["starlight.jpeg","starlight2.jpeg","starlight3.jpeg"], "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi","price":24900},
+            {"color":"星光色","pictures":["starlight.jpeg","starlight2.jpeg","starlight3.jpeg"], "storage":"256GB<br>NT$24,900 起","network":"Wi-Fi + 行動網路","price":29900}
+    
+        ]
+    
+    },
+    "imac":{
+        "imgs":["none.jpeg","none2.jpeg"],
+        "products":
+        [
+
+
+            {"color":"午夜色","pictures":["black.jpeg","black2.jpeg","black3.jpeg"],"ram":"8GB 統一記憶體", "storage":"256GB SSD 儲存裝置","price":42900},
+            {"color":"午夜色","pictures":["black.jpeg","black2.jpeg","black3.jpeg"],"ram":"8GB 統一記憶體", "storage":"512GB SSD 儲存裝置","price":48900},
+            {"color":"午夜色","pictures":["black.jpeg","black2.jpeg","black3.jpeg"],"ram":"8GB 統一記憶體", "storage":"1TB SSD 儲存裝置","price":54900},
+            {"color":"午夜色","pictures":["black.jpeg","black2.jpeg","black3.jpeg"],"ram":"8GB 統一記憶體", "storage":"2TB SSD 儲存裝置","price":66900},
+            {"color":"午夜色","pictures":["black.jpeg","black2.jpeg","black3.jpeg"],"ram":"16GB 統一記憶體", "storage":"256GB SSD 儲存裝置","price":48900},
+            {"color":"午夜色","pictures":["black.jpeg","black2.jpeg","black3.jpeg"],"ram":"16GB 統一記憶體", "storage":"512GB SSD 儲存裝置","price":54900},
+            {"color":"午夜色","pictures":["black.jpeg","black2.jpeg","black3.jpeg"],"ram":"16GB 統一記憶體", "storage":"1TB SSD 儲存裝置","price":60900},
+            {"color":"午夜色","pictures":["black.jpeg","black2.jpeg","black3.jpeg"],"ram":"16GB 統一記憶體", "storage":"2TB SSD 儲存裝置","price":72900},
+            {"color":"午夜色","pictures":["black.jpeg","black2.jpeg","black3.jpeg"],"ram":"24GB 統一記憶體", "storage":"256GB SSD 儲存裝置","price":54900},
+            {"color":"午夜色","pictures":["black.jpeg","black2.jpeg","black3.jpeg"],"ram":"24GB 統一記憶體", "storage":"512GB SSD 儲存裝置","price":60900},
+            {"color":"午夜色","pictures":["black.jpeg","black2.jpeg","black3.jpeg"],"ram":"24GB 統一記憶體", "storage":"1TB SSD 儲存裝置","price":66900},
+            {"color":"午夜色","pictures":["black.jpeg","black2.jpeg","black3.jpeg"],"ram":"24GB 統一記憶體", "storage":"2TB SSD 儲存裝置","price":78900},
+
+            {"color":"星光色","pictures":["yellow.jpeg","yellow2.jpeg","yellow3.jpeg"],"ram":"8GB 統一記憶體", "storage":"256GB SSD 儲存裝置","price":42900},
+            {"color":"星光色","pictures":["yellow.jpeg","yellow2.jpeg","yellow3.jpeg"],"ram":"8GB 統一記憶體", "storage":"512GB SSD 儲存裝置","price":48900},
+            {"color":"星光色","pictures":["yellow.jpeg","yellow2.jpeg","yellow3.jpeg"],"ram":"8GB 統一記憶體", "storage":"1TB SSD 儲存裝置","price":54900},
+            {"color":"星光色","pictures":["yellow.jpeg","yellow2.jpeg","yellow3.jpeg"],"ram":"8GB 統一記憶體", "storage":"2TB SSD 儲存裝置","price":66900},
+            {"color":"星光色","pictures":["yellow.jpeg","yellow2.jpeg","yellow3.jpeg"],"ram":"16GB 統一記憶體", "storage":"256GB SSD 儲存裝置","price":48900},
+            {"color":"星光色","pictures":["yellow.jpeg","yellow2.jpeg","yellow3.jpeg"],"ram":"16GB 統一記憶體", "storage":"512GB SSD 儲存裝置","price":54900},
+            {"color":"星光色","pictures":["yellow.jpeg","yellow2.jpeg","yellow3.jpeg"],"ram":"16GB 統一記憶體", "storage":"1TB SSD 儲存裝置","price":60900},
+            {"color":"星光色","pictures":["yellow.jpeg","yellow2.jpeg","yellow3.jpeg"],"ram":"16GB 統一記憶體", "storage":"2TB SSD 儲存裝置","price":72900},
+            {"color":"星光色","pictures":["yellow.jpeg","yellow2.jpeg","yellow3.jpeg"],"ram":"24GB 統一記憶體", "storage":"256GB SSD 儲存裝置","price":54900},
+            {"color":"星光色","pictures":["yellow.jpeg","yellow2.jpeg","yellow3.jpeg"],"ram":"24GB 統一記憶體", "storage":"512GB SSD 儲存裝置","price":60900},
+            {"color":"星光色","pictures":["yellow.jpeg","yellow2.jpeg","yellow3.jpeg"],"ram":"24GB 統一記憶體", "storage":"1TB SSD 儲存裝置","price":66900},
+            {"color":"星光色","pictures":["yellow.jpeg","yellow2.jpeg","yellow3.jpeg"],"ram":"24GB 統一記憶體", "storage":"2TB SSD 儲存裝置","price":78900},
+
+            {"color":"太空灰色","pictures":["gray.jpeg","gray2.jpeg","gray3.jpeg"],"ram":"8GB 統一記憶體", "storage":"256GB SSD 儲存裝置","price":42900},
+            {"color":"太空灰色","pictures":["gray.jpeg","gray2.jpeg","gray3.jpeg"],"ram":"8GB 統一記憶體", "storage":"512GB SSD 儲存裝置","price":48900},
+            {"color":"太空灰色","pictures":["gray.jpeg","gray2.jpeg","gray3.jpeg"],"ram":"8GB 統一記憶體", "storage":"1TB SSD 儲存裝置","price":54900},
+            {"color":"太空灰色","pictures":["gray.jpeg","gray2.jpeg","gray3.jpeg"],"ram":"8GB 統一記憶體", "storage":"2TB SSD 儲存裝置","price":66900},
+            {"color":"太空灰色","pictures":["gray.jpeg","gray2.jpeg","gray3.jpeg"],"ram":"16GB 統一記憶體", "storage":"256GB SSD 儲存裝置","price":48900},
+            {"color":"太空灰色","pictures":["gray.jpeg","gray2.jpeg","gray3.jpeg"],"ram":"16GB 統一記憶體", "storage":"512GB SSD 儲存裝置","price":54900},
+            {"color":"太空灰色","pictures":["gray.jpeg","gray2.jpeg","gray3.jpeg"],"ram":"16GB 統一記憶體", "storage":"1TB SSD 儲存裝置","price":60900},
+            {"color":"太空灰色","pictures":["gray.jpeg","gray2.jpeg","gray3.jpeg"],"ram":"16GB 統一記憶體", "storage":"2TB SSD 儲存裝置","price":72900},
+            {"color":"太空灰色","pictures":["gray.jpeg","gray2.jpeg","gray3.jpeg"],"ram":"24GB 統一記憶體", "storage":"256GB SSD 儲存裝置","price":54900},
+            {"color":"太空灰色","pictures":["gray.jpeg","gray2.jpeg","gray3.jpeg"],"ram":"24GB 統一記憶體", "storage":"512GB SSD 儲存裝置","price":60900},
+            {"color":"太空灰色","pictures":["gray.jpeg","gray2.jpeg","gray3.jpeg"],"ram":"24GB 統一記憶體", "storage":"1TB SSD 儲存裝置","price":66900},
+            {"color":"太空灰色","pictures":["gray.jpeg","gray2.jpeg","gray3.jpeg"],"ram":"24GB 統一記憶體", "storage":"2TB SSD 儲存裝置","price":78900},
+
+            {"color":"銀色","pictures":["silver.jpeg","silver2.jpeg","silver3.jpeg"],"ram":"8GB 統一記憶體", "storage":"256GB SSD 儲存裝置","price":42900},
+            {"color":"銀色","pictures":["silver.jpeg","silver2.jpeg","silver3.jpeg"],"ram":"8GB 統一記憶體", "storage":"512GB SSD 儲存裝置","price":48900},
+            {"color":"銀色","pictures":["silver.jpeg","silver2.jpeg","silver3.jpeg"],"ram":"8GB 統一記憶體", "storage":"1TB SSD 儲存裝置","price":54900},
+            {"color":"銀色","pictures":["silver.jpeg","silver2.jpeg","silver3.jpeg"],"ram":"8GB 統一記憶體", "storage":"2TB SSD 儲存裝置","price":66900},
+            {"color":"銀色","pictures":["silver.jpeg","silver2.jpeg","silver3.jpeg"],"ram":"16GB 統一記憶體", "storage":"256GB SSD 儲存裝置","price":48900},
+            {"color":"銀色","pictures":["silver.jpeg","silver2.jpeg","silver3.jpeg"],"ram":"16GB 統一記憶體", "storage":"512GB SSD 儲存裝置","price":54900},
+            {"color":"銀色","pictures":["silver.jpeg","silver2.jpeg","silver3.jpeg"],"ram":"16GB 統一記憶體", "storage":"1TB SSD 儲存裝置","price":60900},
+            {"color":"銀色","pictures":["silver.jpeg","silver2.jpeg","silver3.jpeg"],"ram":"16GB 統一記憶體", "storage":"2TB SSD 儲存裝置","price":72900},
+            {"color":"銀色","pictures":["silver.jpeg","silver2.jpeg","silver3.jpeg"],"ram":"24GB 統一記憶體", "storage":"256GB SSD 儲存裝置","price":54900},
+            {"color":"銀色","pictures":["silver.jpeg","silver2.jpeg","silver3.jpeg"],"ram":"24GB 統一記憶體", "storage":"512GB SSD 儲存裝置","price":60900},
+            {"color":"銀色","pictures":["silver.jpeg","silver2.jpeg","silver3.jpeg"],"ram":"24GB 統一記憶體", "storage":"1TB SSD 儲存裝置","price":66900},
+            {"color":"銀色","pictures":["silver.jpeg","silver2.jpeg","silver3.jpeg"],"ram":"24GB 統一記憶體", "storage":"2TB SSD 儲存裝置","price":78900}
+
+        ]
+    
+    }
 }
