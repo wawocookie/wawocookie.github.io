@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="btn-group w-100 mt-3" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary" id="startGame">開始遊戲</button>
+            <button type="button" class="btn btn-primary" id="restartGame">重新開始</button>
+            <button type="button" class="btn btn-primary" id="openAns">看答案</button>
+        </div>
+
+        <div id="liveAlertPlaceholder"></div>
+
+        <div class="history mt-3">
+            <ul class="list-group" id="ul">
+              
+
+            </ul>
+        </div>
+
+        <div class="input-group my-3">
+            <span class="input-group-text" id="basic-addon1">猜答案</span>
+            <input type="text" class="form-control" id="inputData" placeholder="請輸入四個數字" aria-describedby="basic-addon1"
+                aria-label="Username">
+            <button type="button" class="btn btn-primary" id="checkAns">猜</button>
+        </div>
+    </div>
+    </div>
+
+
+    <script>
+
+        //宣告
+        let answerArray = []
+        let inputArray = []
+
+        let countA = 0
+        let countB = 0
+
+        let historyData = ''
+
+        const startGameBtn = document.getElementById('startGame')
+        const restartGameBtn = document.getElementById('restartGame')
+        const openAnsBtn = document.getElementById('openAns')
+        const checkAnsBtn = document.getElementById('checkAns')
+
+        const inputDataDom = document.getElementById('inputData')
+        const ulDom = document.getElementById('ul')
+
+        //addEventListner start
+        //開始遊戲
+        startGameBtn.addEventListener('click', function () {
+            //清空歷史紀錄
+            ulDom.innerHTML=''
+            historyData=''
+            
+            //清空陣列資料
+            answerArray=[]
+            startGameStatus()
+
+
+            //answerArray !==4
+            while (answerArray.length !== 4) {
+
+
+                //step1 取四位不重複的亂數=>看答案才會有值可以顯示
+
+                let randomValue = getRandomIntInclusive(0, 9)
+
+                //step2.AnswerArray 放四位 不重複亂數
+                //如果 AnswerArray 沒有 這個數字 >把值 寫入AnswerArray
+
+                if (!answerArray.includes(randomValue)) {
+                    answerArray.push(randomValue)
+                }
+            }
+       
+
+
+
+
+        })
+        
+        //重新開始
+        restartGameBtn.addEventListener('click', function () {
+            ulDom.innerHTML=''
+            historyData=''
+            alertPlaceholder.innerHTML=''
+            initStatus()
+
+
+        })
+        
+        //看答案
+        openAnsBtn.addEventListener('click', function () {
+            appendAlert('答案是' + answerArray, 'success')
+    
+        })
+
+        //猜 -按鈕
+        checkAnsBtn.addEventListener('click',function(){
+            checkDataFN()
+        })
+
+        //猜 - enter 事件
+        inputDataDom.addEventListener('keypress',function(event){
+
+            if(event.key === "Enter"){
+                checkDataFN()
+            }
+        
+        })
+
+        function checkDataFN(){
+  
+
+            countA=0
+            countB=0
+        
+            // 確認輸入的數字是否是不重複的四位數
+
+            // 1. 取得input value
+
+            let inputValue=inputDataDom.value
+
+
+            
+            //是否為數字
+            console.log(inputValue)
+            console.log(isNaN(parseInt(inputValue)))
+            //去除重複 是否為四位數
+
+            let cleanValue=new Set(inputValue)
+            if(isNaN(parseInt(inputValue))||cleanValue.size!==4){
+                appendAlert('輸入錯誤請輸入不重複四位數字', 'danger')
+                return
+            }
+
+            //比較答案是否有相同的值
+
+            inputArray=[...inputValue]
+            
+            inputArray.forEach((item,index)=>{
+                let itemNumber = parseInt(item)
+               if( answerArray.includes(itemNumber)){
+                    //檢查位置是否相同
+
+                    console.log('------------')
+                    if(answerArray[index]===itemNumber){
+                        countA++
+                    }
+                    else
+                    {
+                        countB++
+                    }
+
+                    console.log(countA)
+                    console.log(countB)
+               }
+            })
+               
+              //寫 紀錄
+              historyData+=
+              `<li class="list-group-item">
+              <span class="badge bg-${countA==4?"primary":"danger"} rounded-pill">${countA}A${countB}B</span>${inputValue}
+              </li>
+              `
+       
+            ulDom.innerHTML=historyData
+
+            if(countA===4)
+            {
+                //win
+                //alert
+                appendAlert('答對了!', 'primary')
+
+                //看答案input猜 disable
+
+                openAnsBtn.disabled=true
+                checkAnsBtn.disabled=true
+                inputDataDom.disabled=true
+                restartGameBtn.disabled=true
+
+                //開始遊戲
+                startGameBtn.disabled=false
+
+            }
+            inputDataDom.value=''
+
+        }
+
+        //Alert start
+
+        const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+        const appendAlert = (message, type) => {
+            const wrapper = document.createElement('div')
+            wrapper.innerHTML = [
+                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                `   <div>${message}</div>`,
+                '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                '</div>'
+            ].join('')
+
+            alertPlaceholder.append(wrapper)
+        }
+
+        window.onload = function () {
+            //init todo...
+            //initStatus初始化防呆
+            initStatus()
+        }
+
+        function initStatus() {
+            //開始遊戲 可以按
+            //重新開始 看答案 猜 反灰
+
+            restartGameBtn.disabled = true
+            openAnsBtn.disabled = true
+            checkAnsBtn.disabled = true
+            inputDataDom.disabled = true
+            startGameBtn.disabled = false
+        }
+
+        function startGameStatus() {
+            //todo...
+            restartGameBtn.disabled = false
+            openAnsBtn.disabled = false
+            checkAnsBtn.disabled = false
+            inputDataDom.disabled = false
+            startGameBtn.disabled = true
+        }
+
+        //取亂數
+        function getRandomIntInclusive(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
+        }
+
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
