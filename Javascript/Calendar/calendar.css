@@ -1,0 +1,65 @@
+.container{
+    max-width: 960px;
+ 
+}
+.yearandmonth_area{
+    position: relative;
+}
+.year_area{
+    font-size: 45px;
+ 
+}
+.month_area{
+    font-size: 42px;
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+}
+i{
+    display: block;
+  
+    font-size: 20px;
+    margin: 0 25px;
+}
+table {
+    table-layout: fixed;
+}
+table tr td{
+    overflow: hidden;
+    height: 119px;
+    padding: 0;
+    opacity: 0.5;
+}
+.detail{
+    background-color: #e9edc9;
+    border-radius: 5px;
+    margin-top: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.date{
+    /* background-color: #aaa; */
+    width: 20px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 0 5px;
+}
+.prevBtn{
+    cursor: pointer;
+}
+.nextBtn{
+    cursor: pointer;
+}
+thead th{
+    /* background-color: #ccd5ae; */
+    --bs-table-bg:#ccd5ae
+
+}
+body{
+    /* background-color: #a3b18a; */
+}
+.thismonth{
+    opacity: 1;
+}
