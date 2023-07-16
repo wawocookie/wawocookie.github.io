@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700;900&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        margin-top: 40px;
+        background-color: black;
+        color: white;
+        font-family: 'Noto Sans TC', sans-serif;
+        text-align: center;
+    }
+
+    i {
+        font-size: 48px;
+    }
+
+    [box-id] {
+        /* width: 100px; */
+        /* height: 100px;  */
+        display: flex;
+        border: 2px solid #09B967;
+        border-radius: 10px;
+        flex-direction: column;
+        padding: 5px 20px;
+    }
+
+
+    [box-id].active {
+        box-shadow: 0 0 25px 8px #09B967;
+        border: 2px solid #09B967;
+
+    }
+
+    .btn {
+        background-color: #09B967;
+        box-shadow: 0 0 20px #09B967;
+        transition: 0.6s;
+    }
+
+    .btn:hover {
+        background-color: #09B967;
+        box-shadow: 0 0 30px #09B967;
+        color: black;
+    }
+
+    #msg {
+        font-weight: 900;
+        font-size: 42px;
+        margin-top: 20px;
+    }
+
+    #answer {
+        font-weight: 900;
+        font-size: 42px;
+    }
+
+    .startbtn {
+        margin-top: 20px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .pic {
+        height: 100%
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div box-id="1" class="col-1 active">
+                餃子
+                <img src="img/dumpings.png" alt="">
+            </div>
+            <div box-id="2" class="col-1">
+                鳳梨酥
+                <img src="img/pineapple.png" alt="">
+            </div>
+            <div box-id="3" class="col-1">
+                豆花
+                <img src="img/douhua.png" alt="">
+            </div>
+            <div box-id="4" class="col-1">
+                包子
+                <img src="img/bun.png" alt="">
+            </div>
+            <div box-id="5" class="col-1">
+                臭豆腐
+                <img src="img/stickytofu.png" alt="">
+            </div>
+            <div box-id="6" class="col-1">
+                牛排
+                <img src="img/steak.png" alt="">
+            </div>
+            <div box-id="7" class="col-1">
+                壽司
+                <img src="img/sushi.png" alt="">
+            </div>
+            <div box-id="8" class="col-1">
+                烤魷魚
+                <img src="img/grilledsquid.png" alt="">
+            </div>
+            <div box-id="9" class="col-1">
+                餃子
+                <img src="img/dumpings.png" alt="">
+            </div>
+            <div box-id="10" class="col-1">
+                鳳梨酥
+                <img src="img/pineapple.png" alt="">
+            </div>
+            <div box-id="11" class="col-1">
+                豆花
+                <img src="img/douhua.png" alt="">
+            </div>
+            <div box-id="12" class="col-1">
+                包子
+                <img src="img/bun.png" alt="">
+            </div>
+
+        </div>
+        <div class="row">
+            <div box-id="32" class="col-1">
+                烤魷魚
+                <img src="img/grilledsquid.png" alt="">
+            </div>
+            <div class="col-10" id="msg">今晚我想來點:</div>
+            <div box-id="13" class="col-1">
+                臭豆腐
+                <img src="img/stickytofu.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div box-id="31" class="col-1">
+                壽司
+                <img src="img/sushi.png" alt="">
+            </div>
+            <div class="col-10" id="answer"></div>
+            <div box-id="14" class="col-1">
+                牛排
+                <img src="img/steak.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div box-id="30" class="col-1">
+                牛排
+                <img src="img/steak.png" alt="">
+            </div>
+            <div class="col-10" id="img"></div>
+            <div box-id="15" class="col-1">
+                壽司
+                <img src="img/sushi.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div box-id="29" class="col-1">
+                臭豆腐
+                <img src="img/stickytofu.png" alt="">
+            </div>
+            <div class="col-10"></div>
+            <div box-id="16" class="col-1">
+                烤魷魚
+                <img src="img/grilledsquid.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div box-id="28" class="col-1">
+                包子
+                <img src="img/bun.png" alt="">
+            </div>
+            <div box-id="27" class="col-1">
+                豆花
+                <img src="img/douhua.png" alt="">
+            </div>
+            <div box-id="26" class="col-1">
+                鳳梨酥
+                <img src="img/pineapple.png" alt="">
+            </div>
+            <div box-id="25" class="col-1">
+                餃子
+                <img src="img/dumpings.png" alt="">
+            </div>
+            <div box-id="24" class="col-1">
+                烤魷魚
+                <img src="img/grilledsquid.png" alt="">
+            </div>
+            <div box-id="23" class="col-1">
+                壽司
+                <img src="img/sushi.png" alt="">
+            </div>
+            <div box-id="22" class="col-1">
+                牛排
+                <img src="img/steak.png" alt="">
+            </div>
+            <div box-id="21" class="col-1">
+                臭豆腐
+                <img src="img/stickytofu.png" alt="">
+            </div>
+            <div box-id="20" class="col-1">
+                包子
+                <img src="img/bun.png" alt="">
+            </div>
+            <div box-id="19" class="col-1">
+                豆花
+                <img src="img/douhua.png" alt="">
+            </div>
+            <div box-id="18" class="col-1">
+                鳳梨酥
+                <img src="img/pineapple.png" alt="">
+            </div>
+            <div box-id="17" class="col-1">
+                餃子
+                <img src="img/dumpings.png" alt="">
+            </div>
+        </div>
+
+        <div class="btn startbtn">START GAME</div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="littlemary.js"></script>
+</body>
+
+</html>
