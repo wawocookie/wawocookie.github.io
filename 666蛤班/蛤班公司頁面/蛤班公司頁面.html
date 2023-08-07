@@ -5,32 +5,201 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap demo</title>
+  <!-- <link rel="stylesheet" href="reset.css"> -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link rel="stylesheet" href="reset.css">
+
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="蛤班公司頁面.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- googlefonts-icons -->
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
 </head>
 
 
 <body>
+    <!-- member-Modal -->
+    <div class="modal-member modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="navbar-nav">
+                    <div class="candidate">
+                        <ul>
+                            <span class="member-type">求職會員</span>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">求職註冊</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">求職登入</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="company">
+                        <ul>
+                            <span class="member-type">企業徵才</span>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">企業註冊</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">企業登入</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="nav-container">
+                    <div class="logo">
+                        <a class="haban-logo" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="./img/logo_666_b_slogan.png"
+                                    media="(min-width: 992px)">
+                                <img class="haban-logo-main" src="./img/logo_666_b_slogan_white.png" alt="666蛤班">
+                            </picture>
+                            <img class="haban-logo-mascot" src="./img/logo_666_b_ha_head.png" alt="">
+                        </a>
+                    </div>
+                    <!-- Button trigger member modal -->
+                    <button type="button" class="login-for-sp" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+                    </button>
+
+                    <div class="item-group collapse navbar-collapse" id="navbarTogglerDemo03">
+
+                        <ul class="item-list navbar-nav ms-auto mb-2 mb-lg-0">
+                            <button class="btn-close" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
+                                aria-expanded="true" aria-label="Close">
+                            </button>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">找工作</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">媒合見證</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" target="_blank">
+                                    <img class="comp_banner" src="./img/img_tooltip_sale.svg" alt="徵才限時0元">
+                                </a>
+                                <a class="ad-plan nav-link" href="#">徵才方案</a>
+                            </li>
+                            <li class="is-m">
+                                <a href="#" class="comp_href">
+                                    <img src="./img/img_menu_sale.png" alt="徵才限時 1 元，前往了解 >">
+                                </a>
+                                <img class="comp_img" src="./img/menu_bg_ha_activity@2x.png" alt="年度代言人 浩子"
+                                    loading="lazy">
+                            </li>
+                        </ul>
+
+                        <div class="member-list">
+                            <ul class="navbar-nav me-auto mb-2 ms-4 mb-lg-0">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <!-- <i class="fa-solid fa-briefcase"></i> -->
+                                        <span class="icon material-symbols-outlined">
+                                            business_center
+                                        </span>
+                                        求職會員
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="material-symbols-outlined">person</span>
+                                                求職註冊
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="material-symbols-outlined">login</span>
+                                                求職登入
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <span class="icon material-symbols-outlined">
+                                            home_work
+                                        </span>
+                                        企業徵才
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="material-symbols-outlined">person</span>
+                                                企業註冊
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="material-symbols-outlined">login</span>
+                                                企業登入
+                                            </a>
+                                        </li>
+                                        <hr>
+                                        <li>
+
+                                            <a class="dropdown-item" href="#">
+                                                <span class="material-symbols-outlined">storefront</span>
+                                                企業方案
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
   <div class="wrapper">
+
     <section class="head-section">
       <div class="wrapper-plus">
-        <div class="banner">
+        <div class="bannerimg">
           <img src="imgs/img_hero_vip_pc.png" alt="">
         </div>
-        <div class="company-name-box">
+        <div class="banner">
           <figure class="logo d-flex">
-            <div class="logo-box">
+            <div class="logobox">
               <img src="imgs/cocologo.png" alt="">
             </div>
-            <span class="plus-icon"></span>
+            <span class="awardimg"></span>
           </figure>
-          <p class="comp-name ">
-            <span>CoCo都可(億巨國際股份有限公司)</span>
+          <p class="companyname_area">
+            <span class="companyname">CoCo都可(億巨國際股份有限公司)</span>
             <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
               viewBox="0 0 32 32" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -41,15 +210,15 @@
           <nav class="headNav">
             <ul>
               <li>
-                <a href="#companyAbout_Box">公司簡介</a>
+                <a href="#company_intro_id">公司簡介</a>
               </li>
               <li>
-                <a href="">產品服務</a>
+                <a href="#company_products_id">產品服務</a>
               </li>
               <li>
-                <a href="">福利與制度</a>
+                <a href="#company_feature_legalitems_id">福利與制度</a>
               </li>
-              <li>
+              <li class="worklist">
                 <a href="">
                   職缺列表
                   <span class="num">152</span>
@@ -68,6 +237,61 @@
         </div>
       </div>
     </section>
+
+    <!-- <div class="fixedheadsection">
+      <div class="fixedcontainer">
+        <div class="companyname_area">
+          <div class="comp_name">
+            <h1>CoCo都可(億巨國際股份有限公司)</h1>
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <g fill="none" fill-rule="evenodd">
+                  <g>
+                      <g>
+                          <g>
+                              <g>
+                                  <path d="M0 0L32 0 32 32 0 32z" transform="translate(-860.000000, -153.000000) translate(-140.000000, 0.000000) translate(1000.000000, 153.000000) translate(16.000000, 16.000000) rotate(90.000000) translate(-16.000000, -16.000000)"></path>
+                                  <path fill="#FA3461" d="M17.6 3.362c.108.092.208.192.3.3 1.293 1.536 2.454 2.515 3.483 2.938.802.33 2.086.395 3.852.196.686-.078 1.305.416 1.382 1.102.005.046.008.093.008.14v12.027c0 .803-.31 1.576-.865 2.157-3.827 4.01-7.074 6.014-9.74 6.014-2.666 0-5.915-2.004-9.748-6.013-.556-.582-.866-1.355-.866-2.16V8.036c0-.69.56-1.25 1.25-1.25.047 0 .093.003.14.008 1.737.195 2.993.13 3.766-.194 1.055-.441 2.213-1.406 3.477-2.895l.038-.045c.89-1.055 2.468-1.188 3.523-.298zm-2.084 1.5l-.008.01-.04.047c-1.437 1.694-2.81 2.837-4.182 3.411-.99.414-2.282.528-3.94.4l-.065-.005v11.338c0 .316.12.62.335.851l.012.013c3.51 3.673 6.366 5.434 8.392 5.434s4.878-1.76 8.384-5.433c.218-.229.341-.53.346-.846V8.727l-.023.002c-1.684.136-3.005.028-4.022-.38l-.035-.014c-1.36-.56-2.735-1.719-4.205-3.465-.019-.023-.04-.044-.061-.063l-.014-.012c-.26-.22-.649-.19-.874.067zm6.55 6.688c.351.374.336.96-.031 1.314l-.011.011-6.83 6.399c-.206.193-.476.275-.736.248-.271.035-.555-.05-.767-.254l-.011-.01-3.523-3.502c-.367-.365-.37-.958-.004-1.325.361-.364.946-.37 1.315-.015l.01.01 2.983 2.965 6.28-5.884c.379-.354.972-.335 1.326.043z" transform="translate(-860.000000, -153.000000) translate(-140.000000, 0.000000) translate(1000.000000, 153.000000)"></path>
+                              </g>
+                          </g>
+                      </g>
+                  </g>
+              </g>
+                     </svg>
+          </div>
+
+          <a href="" class="add-save">
+            <div class="icon">
+              <img src="imgs/heart.png" alt="">
+            </div>
+            收藏公司
+          </a>
+        </div>
+        <nav class="headNav">
+          <ul>
+            <li>
+              <a href="#company_intro_id">公司簡介</a>
+            </li>
+            <li>
+              <a href="#company_products_id">產品服務</a>
+            </li>
+            <li>
+              <a href="#company_feature_legalitems_id">福利與制度</a>
+            </li>
+            <li class="worklist">
+              <a href="">
+                職缺列表
+                <span class="num">152</span>
+              </a>
+
+            </li>
+          </ul>
+
+        </nav>
+
+      </div>
+    </div> -->
+
+
 
 
     <div class="jobnewDetail">
@@ -125,14 +349,14 @@
           </li>
         </ul>
       </div>
-      <div id="ContentBox">
+
+      <div class="content_area">
         <div class="content">
           <!-- 公司簡介 -->
-          <div class="company_detail_box" id="companyAbout_Box">
-            <h2 >公司簡介</h2>
-            <!-- 有圖片時加上  briefIntroduction--haveImg -->
-            <div class="JobDescription briefIntroduction ">
-              <span class="companyMask"></span>
+
+          <div class="company_intro" id="company_intro_id">
+            <h2>公司簡介</h2>
+            <p class="intro">
               CoCo&nbsp;源自於葡萄牙文，是笑臉，期許讓每個人喝了CoCo的飲品之後有發自內心的微笑；本著把飲品的美好分享給更多人的初心，我們在20&nbsp;多年前，開創了CoCo都可第一家店。<br>
               <br>
               CoCo都可是以每一杯的堅持累積出來的，沒有僥倖，也沒有運氣，源自這扎實地的基本功，讓我們始終跟隨市場的腳步持續創新；也因此，現今在全球市場上已坐擁4,500+間門市，分佈在上海、北京、東京、曼谷、馬尼拉、紐約、洛杉磯、舊金山、溫哥華、多倫多、倫敦及雪梨…等各大城市，成為橫跨各大洲的知名茶飲連鎖品牌<br>
@@ -141,34 +365,27 @@
               經營理念<br>
               把CoCo的正能量傳遞到全世界，點亮每一刻!<br>
               Spark&nbsp;up&nbsp;every&nbsp;moment.&nbsp;It’s&nbsp;your&nbsp;drink.&nbsp;CoCo
-            </div>
-            <a href="javascript:;" class="openBtn">展開更多</a>
-            <a href="javascript:;" class="closeBtn d-none">收合簡介</a>
+            </p>
+            <a class="openBtn d-none">展開更多</a>
+            <a class="closeBtn">收合簡介</a>
           </div>
           <!-- 旗下品牌 -->
-          <div class="company_detail_box" id="brand_Box" style="display: none;">
-            <h2>旗下品牌</h2>
-            <div class="brand_container">
-            </div>
-          </div>
-          <!-- 環境照片 m -->
-          <div class="company_detail_box comp_ref_pic">
-          
 
-          </div>
+          <!-- 環境照片 m -->
+
+
           <!-- 產品服務 -->
-          <div class="company_detail_box benefits" id="companyProduct_Box">
+          <div class="company_products" id="company_products_id">
             <h2>產品服務</h2>
-            <div class="JobDescription briefIntroduction autoHeight">
-              <p>以提供「多元化創意飲品」為主要服務項目。<br>
-                總部設有專業的研發團隊與實驗室，以確保每杯飲品如出一轍，並依季節推出新品，提供消費者多元的選擇，保有產品競爭力，也為品牌注入源源不絕的生命力。</p>
-            </div>
-            <a href="javascript:;" class="openBtn" style="display: none;">展開更多</a>
-            <a href="javascript:;" class="closeBtn d-none">收合簡介</a>
+            <p>以提供「多元化創意飲品」為主要服務項目。<br>
+              總部設有專業的研發團隊與實驗室，以確保每杯飲品如出一轍，並依季節推出新品，提供消費者多元的選擇，保有產品競爭力，也為品牌注入源源不絕的生命力。</p>
+
+            <a class="openBtn d-none">展開更多</a>
+            <a class="closeBtn d-none">收合簡介</a>
           </div>
           <!-- 公司特色及法定項目 -->
-          
-          <div class="company_feature_legalitems">
+
+          <div class="company_feature_legalitems" id="company_feature_legalitems_id">
             <h2>公司制度</h2>
             <div class="company_feature">
               <h4>公司特色</h4>
@@ -242,7 +459,7 @@
                 ＊透明的升遷管道，員工年度調薪</p>
             </div>
           </div>
-        
+
 
 
 
@@ -268,7 +485,8 @@
                   留言
                 </div>
                 <p class="comment">
-                  員工福利有三節禮金 生日等等 我入職後沒多久 公司因為會員卡新出 每個員工都有一張 新人也有 而且在員工教育方面真的很認真 而且很親切 對於每個環節都會很仔細的去講 講完在讓員工用機台實際操作一遍 面試的時候也是很親切 不像其他公司面試都倉促帶過而已 不過當時因為車禍的關係離職了 現在離職兩年了 很多都記不太清楚 總而言之 真的很棒的一間公司
+                  員工福利有三節禮金 生日等等 我入職後沒多久 公司因為會員卡新出 每個員工都有一張 新人也有 而且在員工教育方面真的很認真 而且很親切 對於每個環節都會很仔細的去講 講完在讓員工用機台實際操作一遍
+                  面試的時候也是很親切 不像其他公司面試都倉促帶過而已 不過當時因為車禍的關係離職了 現在離職兩年了 很多都記不太清楚 總而言之 真的很棒的一間公司
                 </p>
               </li>
               <li>
@@ -294,464 +512,217 @@
             </ul>
 
             <div class="more">
-              <a href="" class="writecomment">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+              <a href="" class="writecomment" data-bs-target="#writecommentModal" data-bs-toggle="modal">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18"
+                  height="18" viewBox="0 0 18 18" version="1.1">
                   <title>1-01) Icon/1) Base/ic_edit</title>
                   <g id="1-01)-Icon/1)-Base/ic_edit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                      <rect id="icon_area" x="0" y="0" width="18" height="18"></rect>
-                      <path d="M15.2841797,14.8161621 C15.5414451,14.8161621 15.75,15.024717 15.75,15.2819824 C15.75,15.5366752 15.5455954,15.7436268 15.2918829,15.7477403 L2.71582031,15.7478027 C2.45855486,15.7478027 2.25,15.5392479 2.25,15.2819824 C2.25,15.0272896 2.45440462,14.8203381 2.70811712,14.8162245 L15.2841797,14.8161621 Z M9.04314455,2.19775451 C9.77423348,1.46666557 10.9595628,1.46666557 11.6906518,2.19775451 L11.6906518,2.19775451 L12.7471687,3.25427147 C13.4782577,3.98536041 13.4782577,5.17068977 12.7471687,5.9017787 L12.7471687,5.9017787 L6.19907845,12.449869 C5.98001073,12.6689367 5.68293836,12.7920805 5.37312987,12.792245 L5.37312987,12.792245 L3.32115462,12.7933344 C2.67556404,12.7936771 2.15193163,12.2706004 2.15158883,11.6247625 L2.15158883,11.6247625 L2.15267827,9.57179338 C2.15284274,9.26198489 2.27598654,8.96491252 2.49505426,8.7458448 L2.49505426,8.7458448 Z M11.0318824,2.85652391 C10.6646217,2.48926327 10.0691746,2.48926327 9.70191395,2.85652391 L9.70191395,2.85652391 L3.15382366,9.4046142 C3.10935127,9.4490866 3.08435215,9.50939452 3.08431876,9.57228797 L3.08431876,9.57228797 L3.08322945,11.6240159 C3.08662693,11.7588674 3.19164809,11.8617624 3.32066002,11.8616939 L3.32066002,11.8616939 L5.37263527,11.8606045 C5.43552873,11.8605711 5.49583665,11.835572 5.54030905,11.7910996 L5.54030905,11.7910996 L12.0883993,5.2430093 C12.45566,4.87574866 12.45566,4.28030152 12.0883993,3.91304088 L12.0883993,3.91304088 Z" id="🎨color" fill="#2369FF"></path>
+                    <rect id="icon_area" x="0" y="0" width="18" height="18"></rect>
+                    <path
+                      d="M15.2841797,14.8161621 C15.5414451,14.8161621 15.75,15.024717 15.75,15.2819824 C15.75,15.5366752 15.5455954,15.7436268 15.2918829,15.7477403 L2.71582031,15.7478027 C2.45855486,15.7478027 2.25,15.5392479 2.25,15.2819824 C2.25,15.0272896 2.45440462,14.8203381 2.70811712,14.8162245 L15.2841797,14.8161621 Z M9.04314455,2.19775451 C9.77423348,1.46666557 10.9595628,1.46666557 11.6906518,2.19775451 L11.6906518,2.19775451 L12.7471687,3.25427147 C13.4782577,3.98536041 13.4782577,5.17068977 12.7471687,5.9017787 L12.7471687,5.9017787 L6.19907845,12.449869 C5.98001073,12.6689367 5.68293836,12.7920805 5.37312987,12.792245 L5.37312987,12.792245 L3.32115462,12.7933344 C2.67556404,12.7936771 2.15193163,12.2706004 2.15158883,11.6247625 L2.15158883,11.6247625 L2.15267827,9.57179338 C2.15284274,9.26198489 2.27598654,8.96491252 2.49505426,8.7458448 L2.49505426,8.7458448 Z M11.0318824,2.85652391 C10.6646217,2.48926327 10.0691746,2.48926327 9.70191395,2.85652391 L9.70191395,2.85652391 L3.15382366,9.4046142 C3.10935127,9.4490866 3.08435215,9.50939452 3.08431876,9.57228797 L3.08431876,9.57228797 L3.08322945,11.6240159 C3.08662693,11.7588674 3.19164809,11.8617624 3.32066002,11.8616939 L3.32066002,11.8616939 L5.37263527,11.8606045 C5.43552873,11.8605711 5.49583665,11.835572 5.54030905,11.7910996 L5.54030905,11.7910996 L12.0883993,5.2430093 C12.45566,4.87574866 12.45566,4.28030152 12.0883993,3.91304088 L12.0883993,3.91304088 Z"
+                      id="🎨color" fill="#2369FF"></path>
                   </g>
-              </svg>
+                </svg>
                 撰寫推薦
               </a>
-              <a href="" class="seemore">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+              <a href="" class="seemore" data-bs-target="#seemoreModal" data-bs-toggle="modal">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18"
+                  height="18" viewBox="0 0 18 18" version="1.1">
                   <title>1-01) Icon/1) Base/ic_msg</title>
                   <g id="1-01)-Icon/1)-Base/ic_msg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                      <rect id="icon_area" x="0" y="0" width="18" height="18"></rect>
-                      <path d="M14.2382812,2.55761719 C15.2721971,2.55761719 16.1103516,3.39577162 16.1103516,4.4296875 L16.1103516,4.4296875 L16.1103516,11.5488281 C16.1103516,12.582744 15.2721971,13.4208984 14.2382812,13.4208984 L14.2382812,13.4208984 L12.3114727,13.4208984 L10.887129,15.8485764 C10.7915143,16.0115425 10.6578675,16.1488248 10.4977202,16.2487531 L10.4977202,16.2487531 L10.4833128,16.2575884 L10.4704466,16.2652589 C9.91981218,16.5883248 9.21209526,16.409744 8.88052298,15.8650398 L8.88052298,15.8650398 L8.87260629,15.8518235 L7.44632227,13.4208984 L3.76171875,13.4208984 C2.73814202,13.4208984 1.9064311,12.5994233 1.88989924,11.5797862 L1.88989924,11.5797862 L1.88964844,4.4296875 C1.88964844,3.39577162 2.72780287,2.55761719 3.76171875,2.55761719 L3.76171875,2.55761719 Z M14.2382812,3.48925781 L3.76171875,3.48925781 C3.24233378,3.48925781 2.82128906,3.91030253 2.82128906,4.4296875 L2.82128906,4.4296875 L2.82128906,11.5488281 C2.82128906,12.0682131 3.24233378,12.4892578 3.76171875,12.4892578 L3.76171875,12.4892578 L7.71310547,12.4892578 C7.87836362,12.4892578 8.03125083,12.5768158 8.11487885,12.7193522 L8.11487885,12.7193522 L9.67357617,15.3760254 L9.67672266,15.3812637 C9.74681542,15.4904549 9.88460682,15.5252196 9.9938919,15.4646233 L9.9938919,15.4646233 L9.99847266,15.462 L10.0084738,15.4558471 C10.0371857,15.4371355 10.0615101,15.4124212 10.0797645,15.3834065 L10.0797645,15.3834065 L10.0835827,15.3771239 L11.6429337,12.7193522 C11.7265617,12.5768158 11.8794489,12.4892578 12.044707,12.4892578 L12.044707,12.4892578 L14.2382812,12.4892578 C14.7576662,12.4892578 15.1787109,12.0682131 15.1787109,11.5488281 L15.1787109,11.5488281 L15.1787109,4.4296875 C15.1787109,3.91030253 14.7576662,3.48925781 14.2382812,3.48925781 L14.2382812,3.48925781 Z M5.61621094,7.28613281 C6.00453615,7.28613281 6.31933594,7.6009326 6.31933594,7.98925781 C6.31933594,8.37758303 6.00453615,8.69238281 5.61621094,8.69238281 C5.22788572,8.69238281 4.91308594,8.37758303 4.91308594,7.98925781 C4.91308594,7.6009326 5.22788572,7.28613281 5.61621094,7.28613281 Z M9.00878906,7.28613281 C9.39711428,7.28613281 9.71191406,7.6009326 9.71191406,7.98925781 C9.71191406,8.37758303 9.39711428,8.69238281 9.00878906,8.69238281 C8.62046385,8.69238281 8.30566406,8.37758303 8.30566406,7.98925781 C8.30566406,7.6009326 8.62046385,7.28613281 9.00878906,7.28613281 Z M12.4013672,7.28613281 C12.7896924,7.28613281 13.1044922,7.6009326 13.1044922,7.98925781 C13.1044922,8.37758303 12.7896924,8.69238281 12.4013672,8.69238281 C12.013042,8.69238281 11.6982422,8.37758303 11.6982422,7.98925781 C11.6982422,7.6009326 12.013042,7.28613281 12.4013672,7.28613281 Z" id="🎨color" fill="#2369FF"></path>
+                    <rect id="icon_area" x="0" y="0" width="18" height="18"></rect>
+                    <path
+                      d="M14.2382812,2.55761719 C15.2721971,2.55761719 16.1103516,3.39577162 16.1103516,4.4296875 L16.1103516,4.4296875 L16.1103516,11.5488281 C16.1103516,12.582744 15.2721971,13.4208984 14.2382812,13.4208984 L14.2382812,13.4208984 L12.3114727,13.4208984 L10.887129,15.8485764 C10.7915143,16.0115425 10.6578675,16.1488248 10.4977202,16.2487531 L10.4977202,16.2487531 L10.4833128,16.2575884 L10.4704466,16.2652589 C9.91981218,16.5883248 9.21209526,16.409744 8.88052298,15.8650398 L8.88052298,15.8650398 L8.87260629,15.8518235 L7.44632227,13.4208984 L3.76171875,13.4208984 C2.73814202,13.4208984 1.9064311,12.5994233 1.88989924,11.5797862 L1.88989924,11.5797862 L1.88964844,4.4296875 C1.88964844,3.39577162 2.72780287,2.55761719 3.76171875,2.55761719 L3.76171875,2.55761719 Z M14.2382812,3.48925781 L3.76171875,3.48925781 C3.24233378,3.48925781 2.82128906,3.91030253 2.82128906,4.4296875 L2.82128906,4.4296875 L2.82128906,11.5488281 C2.82128906,12.0682131 3.24233378,12.4892578 3.76171875,12.4892578 L3.76171875,12.4892578 L7.71310547,12.4892578 C7.87836362,12.4892578 8.03125083,12.5768158 8.11487885,12.7193522 L8.11487885,12.7193522 L9.67357617,15.3760254 L9.67672266,15.3812637 C9.74681542,15.4904549 9.88460682,15.5252196 9.9938919,15.4646233 L9.9938919,15.4646233 L9.99847266,15.462 L10.0084738,15.4558471 C10.0371857,15.4371355 10.0615101,15.4124212 10.0797645,15.3834065 L10.0797645,15.3834065 L10.0835827,15.3771239 L11.6429337,12.7193522 C11.7265617,12.5768158 11.8794489,12.4892578 12.044707,12.4892578 L12.044707,12.4892578 L14.2382812,12.4892578 C14.7576662,12.4892578 15.1787109,12.0682131 15.1787109,11.5488281 L15.1787109,11.5488281 L15.1787109,4.4296875 C15.1787109,3.91030253 14.7576662,3.48925781 14.2382812,3.48925781 L14.2382812,3.48925781 Z M5.61621094,7.28613281 C6.00453615,7.28613281 6.31933594,7.6009326 6.31933594,7.98925781 C6.31933594,8.37758303 6.00453615,8.69238281 5.61621094,8.69238281 C5.22788572,8.69238281 4.91308594,8.37758303 4.91308594,7.98925781 C4.91308594,7.6009326 5.22788572,7.28613281 5.61621094,7.28613281 Z M9.00878906,7.28613281 C9.39711428,7.28613281 9.71191406,7.6009326 9.71191406,7.98925781 C9.71191406,8.37758303 9.39711428,8.69238281 9.00878906,8.69238281 C8.62046385,8.69238281 8.30566406,8.37758303 8.30566406,7.98925781 C8.30566406,7.6009326 8.62046385,7.28613281 9.00878906,7.28613281 Z M12.4013672,7.28613281 C12.7896924,7.28613281 13.1044922,7.6009326 13.1044922,7.98925781 C13.1044922,8.37758303 12.7896924,8.69238281 12.4013672,8.69238281 C12.013042,8.69238281 11.6982422,8.37758303 11.6982422,7.98925781 C11.6982422,7.6009326 12.013042,7.28613281 12.4013672,7.28613281 Z"
+                      id="🎨color" fill="#2369FF"></path>
                   </g>
-              </svg>
+                </svg>
                 查看更多(4筆)
               </a>
+
+
+    
+              <!-- 撰寫推薦Modal -->
+              <div class="modal fade" id="writecommentModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">撰寫推薦</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <span>職位:</span><input type="text" class="position">
+                      <div class="comment">
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                      </div>
+                    
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                      <button type="button" class="btn btn-primary">保存</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 查看更多Modal -->
+              <div class="modal fade" id="seemoreModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">所有留言</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <ul>
+                      <li>
+                        <div class="employee">
+                          來自
+                          <a href="">門市／店員／專櫃人員</a>
+                          留言
+                        </div>
+                        <p class="comment">
+                          員工福利有三節禮金 生日等等 我入職後沒多久 公司因為會員卡新出 每個員工都有一張 新人也有 而且在員工教育方面真的很認真 而且很親切 對於每個環節都會很仔細的去講 講完在讓員工用機台實際操作一遍
+                          面試的時候也是很親切 不像其他公司面試都倉促帶過而已 不過當時因為車禍的關係離職了 現在離職兩年了 很多都記不太清楚 總而言之 真的很棒的一間公司
+                        </p>
+                      </li>
+                      <li>
+                        <div class="employee">
+                          來自
+                          <a href="">工務工程專員 </a>
+                          留言
+                        </div>
+                        <p class="comment">
+                          就自身以往待過的公司說,公司風氣還不錯~
+                        </p>
+                      </li>
+                      <li>
+                        <div class="employee">
+                          來自
+                          <a href=""> 副店長</a>
+                          留言
+                        </div>
+                        <p class="comment">
+                          薪水穩定且在同業算較高 薪水成長快 升遷管道明確
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                    <button type="button" class="btn btn-primary">保存</button>
+                  </div>
+                </div>
+              </div>
+            </div>
             </div>
 
           </div>
 
           <!-- 媒體報導 -->
-          
+
           <!-- 工作機會 -->
-          
-          <div class="company_detail_box" id="complistContent_Box">
-            <div id="listAnchor" class="listAnchor_m"></div>
-            <div id="listArea">
-              <h2>所有工作機會</h2><span class="listArea-total">共 152 筆</span>
-              <div class="opOption">
 
-                <div class="dropdown">
-                  <button class="btn btn-close-white dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    工作地區
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <input type="checkbox" name="" id="">
-                      <a class="dropdown-item" href="#">台北市-中山區</a>
-                    </li>
-                    <li>
-                      <input type="checkbox" name="" id="">
-                      <a class="dropdown-item" href="#">台北市-大安區</a>
-                    </li>
-                    <li>
-                      <input type="checkbox" name="" id="">
-                      <a class="dropdown-item" href="#">台北市-松山區</a>
-                    </li>
-                    <li>
-                      <input type="checkbox" name="" id="">
-                      <a class="dropdown-item" href="#">台北市-松山區 </a>
-                    </li>
-
-
-                  </ul>
-                </div>
-                <div class="dropdown">
-                  <button class="btn btn-close-white dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    職務類別
-                  </button>
-                  <ul class="dropdown-menu">
-                  
-                    <li>
-                      <input type="checkbox" name="" id="">
-                      <a class="dropdown-item" href="#">全職 - 餐飲服務人員</a>
-                    </li>
-                    <li>
-                      <input type="checkbox" name="" id="">
-                      <a class="dropdown-item" href="#">全職 - 門市／店員／專櫃人員</a>
-                    </li>
-                    <li>
-                      <input type="checkbox" name="" id="">
-                      <a class="dropdown-item" href="#">全職 - 飲品調製販售員</a>
-                    </li>
-                    <li>
-                      <input type="checkbox" name="" id="">
-                      <a class="dropdown-item" href="#">全職 - 儲備幹部</a>
-                    </li>
-                    <li>
-                      <input type="checkbox" name="" id="">
-                      <a class="dropdown-item" href="#">全職 - 賣場管理人員</a>
-                    </li>
-                    <li>
-                      <input type="checkbox" name="" id="">
-                      <a class="dropdown-item" href="#">全職 - 餐飲主管</a>
-                    </li>
-
-                    <li>
-                      <input type="checkbox" name="" id="">
-                      <a class="dropdown-item" href="#">全職 - 餐飲主管</a>
-                    </li>
-                    <li>
-                      <input type="checkbox" name="" id="">
-                      <a class="dropdown-item" href="#">全職 - 餐飲主管</a>
-                    </li>
-                    <li>
-                      <input type="checkbox" name="" id="">
-                      <a class="dropdown-item" href="#">全職 - 餐飲主管</a>
-                    </li>
-                    <li>
-                      <input type="checkbox" name="" id="">
-                      <a class="dropdown-item" href="#">全職 - 餐飲主管</a>
-                    </li>
-                    <li>
-                      <input type="checkbox" name="" id="">
-                      <a class="dropdown-item" href="#">全職 - 餐飲主管</a>
-                    </li>
-                    <li>
-                      <input type="checkbox" name="" id="">
-                      <a class="dropdown-item" href="#">全職 - 餐飲主管</a>
-                    </li>
-                    <li>
-                      <input type="checkbox" name="" id="">
-                      <a class="dropdown-item" href="#">全職 - 餐飲主管</a>
-                    </li>
-
-                    <li>
-                      <input type="checkbox" name="" id="">
-                      <a class="dropdown-item" href="#">全職 - 餐飲主管</a>
-                    </li>
-
-                  </ul>
-                </div>
-              </div>
-
-
-            
-
-
-    
-              <p class="JobDescription pu-hidden">你可以先 <a href="javascript:;" class="save_btn"
-                  data-modal-type="CommonLogin"
-                  data-back-url="https://www.518.com.tw/member-login.html?backUrl=https%3A%2F%2Fwww.518.com.tw%2Fcompany-LDDa5b.html%3Fadd_folder%3D1"><i></i>收藏公司</a>
-                ，日後有最新工作馬上通知你。</p>
-            
-
-
-
-
-
-              <form name="showSelectForm" action="?" method="post" target="_blank" onsubmit="return false;" class="">
-                <div class="compJobList">
-                 
-                  <div class="listArea_pc">
-                    <div id="sumTable">
-                      <ul class="tableTitle">
-                        <li class="title">職務名稱</li>
-                        <li class="area"><a class="gray" href="javascript:;" onclick="change_order('location','up')"
-                            title="用工作地區來排序">工作地區</a></li>
-                        <li class="date"><a class="down" href="javascript:;" onclick="change_order('time','up')"
-                            title="用刊登日期來排序">刊登日期</a></li>
-                      </ul>
-                      <div id="listContent">
-                        <div class="jobSumContent noborder" data-job-id="LzeM2K">
-                          <ul>
-                            <li class="title"><a href="https://www.518.com.tw/job-LzeM2K.html" target="_blank"
-                                title="(CoCo都可)儲備幹部[大台北地區]">(CoCo都可)儲備幹部[大台北地區]</a></li>
-                            <li class="area"><a href="job-index-3001001009.html" title="更多台北市-士林區職缺列表">台北市-士林區</a></li>
-                            <li class="date">08/02</li>
-                          </ul>
-                          <div class="condList">
-                            <div class="condDetail">
-                              <span class="treatment">工作待遇：月薪 34,000 至 45,000 元</span>
-                              <p>完整培訓x明確晉升x多元發展
-                                歡迎加入全球最大連鎖手搖飲品牌，成就不凡的自己!!
-
-                                1.接受完整飲品、備料…等專業培訓。
-                                2.樂於團隊合作，齊心完成.....</p>
-                            </div>
-                            <div class="function_btn_new">
-
-                              <a href="javascript:;" data-modal-type="CommonLogin" class="keepBtn"
-                                data-back-url="https://www.518.com.tw/company-LDDa5b.html?collectingJobId=LzeM2K"><span><img
-                                    src="https://statics.518.com.tw/img/index/icon/ic_heart_pinkRed.svg">收藏職缺</span></a>
-                              <a href="#" class="recruitedBtn add" style="display: none;"><span><img
-                                    src="https://statics.518.com.tw/img/index/icon/ic_heart_fill_pinkRed.svg"
-                                    data-pin-nopin="true">已收藏</span></a><a href="javascript:;" data-modal=""
-                                data-modal-type="resumeApply" id="recruitedBtn" class="recruitedBtn"
-                                data-job-id="LzeM2K"><span>蛤不快投</span></a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="jobSumContent " data-job-id="LmeoMM">
-                          <ul>
-                            <li class="title"><a href="https://www.518.com.tw/job-LmeoMM.html" target="_blank"
-                                title="【CoCo都可】儲備幹部[桃園地區]">【CoCo都可】儲備幹部[桃園地區]</a></li>
-                            <li class="area"><a href="job-index-3001003002.html" title="更多桃園市-桃園區職缺列表">桃園市-桃園區</a></li>
-                            <li class="date">08/02</li>
-                          </ul>
-                          <div class="condList">
-                            <div class="condDetail">
-                              <span class="treatment">工作待遇：月薪 34,000 至 45,000 元</span>
-                              <p>歡迎加入全球最大連鎖茶飲品牌
-                                相信您在此一定有一展長才的機會
-
-                                1.負責門市營運、銷售與物料資產管理、達成公司交付任務與目標
-                                2.與同仁並肩合作執.....</p>
-                            </div>
-                            <div class="function_btn_new">
-
-                              <a href="javascript:;" data-modal-type="CommonLogin" class="keepBtn"
-                                data-back-url="https://www.518.com.tw/company-LDDa5b.html?collectingJobId=LmeoMM"><span><img
-                                    src="https://statics.518.com.tw/img/index/icon/ic_heart_pinkRed.svg">收藏職缺</span></a>
-                              <a href="#" class="recruitedBtn add" style="display: none;"><span><img
-                                    src="https://statics.518.com.tw/img/index/icon/ic_heart_fill_pinkRed.svg"
-                                    data-pin-nopin="true">已收藏</span></a><a href="javascript:;" data-modal=""
-                                data-modal-type="resumeApply" id="recruitedBtn" class="recruitedBtn"
-                                data-job-id="LmeoMM"><span>蛤不快投</span></a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="jobSumContent " data-job-id="GZobJ9">
-                          <ul>
-                            <li class="title"><a href="https://www.518.com.tw/job-GZobJ9.html" target="_blank"
-                                title="【CoCo都可】儲備幹部[新竹地區]">【CoCo都可】儲備幹部[新竹地區]</a></li>
-                            <li class="area"><a href="job-index-3001025001.html" title="更多新竹市-全區職缺列表">新竹市-全區</a></li>
-                            <li class="date">08/02</li>
-                          </ul>
-                          <div class="condList">
-                            <div class="condDetail">
-                              <span class="treatment">工作待遇：月薪 34,000 至 45,000 元</span>
-                              <p>歡迎加入全球最大連鎖茶飲品牌
-                                相信您在此一定有一展長才的機會
-
-                                1.規劃與管理門市日常營運工作
-                                2.充分了解及掌握門市的所有流程操作以及行政工作
-                                3.....</p>
-                            </div>
-                            <div class="function_btn_new">
-
-                              <a href="javascript:;" data-modal-type="CommonLogin" class="keepBtn"
-                                data-back-url="https://www.518.com.tw/company-LDDa5b.html?collectingJobId=GZobJ9"><span><img
-                                    src="https://statics.518.com.tw/img/index/icon/ic_heart_pinkRed.svg">收藏職缺</span></a>
-                              <a href="#" class="recruitedBtn add" style="display: none;"><span><img
-                                    src="https://statics.518.com.tw/img/index/icon/ic_heart_fill_pinkRed.svg"
-                                    data-pin-nopin="true">已收藏</span></a><a href="javascript:;" data-modal=""
-                                data-modal-type="resumeApply" id="recruitedBtn" class="recruitedBtn"
-                                data-job-id="GZobJ9"><span>蛤不快投</span></a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="jobSumContent " data-job-id="LD7mOb">
-                          <ul>
-                            <li class="title"><a href="https://www.518.com.tw/job-LD7mOb.html" target="_blank"
-                                title="【CoCo都可】儲備幹部[三峽鶯歌地區]">【CoCo都可】儲備幹部[三峽鶯歌地區]</a></li>
-                            <li class="area"><a href="job-index-3001002016.html" title="更多新北市-三峽區職缺列表">新北市-三峽區</a></li>
-                            <li class="date">08/02</li>
-                          </ul>
-                          <div class="condList">
-                            <div class="condDetail">
-                              <span class="treatment">工作待遇：月薪 34,000 至 45,000 元</span>
-                              <p>歡迎加入全球最大連鎖茶飲品牌
-                                相信您在此一定有一展長才的機會
-
-                                1.負責門市營運、銷售與物料資產管理、達成公司交付任務與目標
-                                2.與同仁並肩合作執.....</p>
-                            </div>
-                            <div class="function_btn_new">
-
-                              <a href="javascript:;" data-modal-type="CommonLogin" class="keepBtn"
-                                data-back-url="https://www.518.com.tw/company-LDDa5b.html?collectingJobId=LD7mOb"><span><img
-                                    src="https://statics.518.com.tw/img/index/icon/ic_heart_pinkRed.svg">收藏職缺</span></a>
-                              <a href="#" class="recruitedBtn add" style="display: none;"><span><img
-                                    src="https://statics.518.com.tw/img/index/icon/ic_heart_fill_pinkRed.svg"
-                                    data-pin-nopin="true">已收藏</span></a><a href="javascript:;" data-modal=""
-                                data-modal-type="resumeApply" id="recruitedBtn" class="recruitedBtn"
-                                data-job-id="LD7mOb"><span>蛤不快投</span></a>
-                            </div>
-                          </div>
-                        </div>
-                    
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <input id="module" type="hidden" value="job" name="module">
-                <input id="action" type="hidden" value="showSelect" name="action">
-              </form>
-
-
-              <div class="pagination_area">
-                <div class="report">
-                  <span>發現公司有問題嗎?</span>
-                  <a href="">我要檢舉</a>
-                </div>
-                <div class="pagination">
-                  
-                  <a href="" class="prevpage">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6" height="10" viewBox="0 0 6 10" version="1.1">
-                      <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
-                      <title>ic-left</title>
-                      <desc>Created with Sketch.</desc>
-                      <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                          <g id="Job-vacancy-/-PC-/-Style2" transform="translate(-232.000000, -628.000000)" fill="#333333" fill-rule="nonzero">
-                              <g id="Group" transform="translate(232.000000, 622.000000)">
-                                  <g id="展開全部">
-                                      <g id="ic-left" transform="translate(3.500000, 11.000000) rotate(90.000000) translate(-3.500000, -11.000000) translate(-1.500000, 7.500000)">
-                                          <path d="M7.04840234,7.82419766 C7.28268283,7.58991717 7.28268283,7.21007345 7.04840234,6.97579297 L3.69680938,3.6242 L3.69680938,3.6242 L7.04840234,0.272607031 C7.28268283,0.038326546 7.28268283,-0.341517171 7.04840234,-0.575797656 C6.81412186,-0.810078142 6.43427814,-0.810078142 6.19999766,-0.575797656 L2,3.6242 L2,3.6242 L6.19999766,7.82419766 C6.43427814,8.05847814 6.81412186,8.05847814 7.04840234,7.82419766 Z" id="Path" transform="translate(4.736302, 3.624200) rotate(270.000000) translate(-4.736302, -3.624200) "></path>
-                                      </g>
-                                  </g>
-                              </g>
-                          </g>
-                      </g>
-                    </svg>
-                    上一頁
-                  </a>
-                  <span class="pagecount">
-                    第
-                    <span>1 / 4</span>
-                    頁
-                  </span>
-                  <a href="" class="nextpage">
-                    下一頁
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6" height="10" viewBox="0 0 6 10" version="1.1">
-                      <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
-                      <title>ic-right</title>
-                      <desc>Created with Sketch.</desc>
-                      <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                          <g id="Job-vacancy-/-PC-/-Style2" transform="translate(-495.000000, -628.000000)" fill="#333333" fill-rule="nonzero">
-                              <g id="Group" transform="translate(232.000000, 622.000000)">
-                                  <g id="展開全部" transform="translate(214.000000, 0.000000)">
-                                      <g id="ic-right" transform="translate(51.500000, 11.000000) scale(-1, 1) rotate(90.000000) translate(-51.500000, -11.000000) translate(46.500000, 7.500000)">
-                                          <path d="M7.04840234,7.82419766 C7.28268283,7.58991717 7.28268283,7.21007345 7.04840234,6.97579297 L3.69680938,3.6242 L3.69680938,3.6242 L7.04840234,0.272607031 C7.28268283,0.038326546 7.28268283,-0.341517171 7.04840234,-0.575797656 C6.81412186,-0.810078142 6.43427814,-0.810078142 6.19999766,-0.575797656 L2,3.6242 L2,3.6242 L6.19999766,7.82419766 C6.43427814,8.05847814 6.81412186,8.05847814 7.04840234,7.82419766 Z" id="Path" transform="translate(4.736302, 3.624200) rotate(270.000000) translate(-4.736302, -3.624200) "></path>
-                                      </g>
-                                  </g>
-                              </g>
-                          </g>
-                      </g>
-                  </svg>
-                  </a>
-                </div>
-               
-             
-
-
-
-            </div>
-
-          </div>
-          
 
           <div class="company_chance" id="company_chance_id">
             <h2>所有工作機會</h2>
             <span>共六筆</span>
-            <div class="dropdown">
-              <button class="btn btn-close-white dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                工作地區
-              </button>
-              <ul class="dropdown-menu">
-                <li>
-                  <input type="checkbox" name="" id="">
-                  <a class="dropdown-item" href="#">台北市-中山區</a>
-                </li>
-                <li>
-                  <input type="checkbox" name="" id="">
-                  <a class="dropdown-item" href="#">台北市-大安區</a>
-                </li>
-                <li>
-                  <input type="checkbox" name="" id="">
-                  <a class="dropdown-item" href="#">台北市-松山區</a>
-                </li>
-                <li>
-                  <input type="checkbox" name="" id="">
-                  <a class="dropdown-item" href="#">台北市-松山區 </a>
-                </li>
 
 
-              </ul>
-            </div>
-            <div class="dropdown">
-              <button class="btn btn-close-white dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                職務類別
-              </button>
-              <ul class="dropdown-menu">
-              
-                <li>
-                  <input type="checkbox" name="" id="">
-                  <a class="dropdown-item" href="#">全職 - 餐飲服務人員</a>
-                </li>
-                <li>
-                  <input type="checkbox" name="" id="">
-                  <a class="dropdown-item" href="#">全職 - 門市／店員／專櫃人員</a>
-                </li>
-                <li>
-                  <input type="checkbox" name="" id="">
-                  <a class="dropdown-item" href="#">全職 - 飲品調製販售員</a>
-                </li>
-                <li>
-                  <input type="checkbox" name="" id="">
-                  <a class="dropdown-item" href="#">全職 - 儲備幹部</a>
-                </li>
-                <li>
-                  <input type="checkbox" name="" id="">
-                  <a class="dropdown-item" href="#">全職 - 賣場管理人員</a>
-                </li>
-                <li>
-                  <input type="checkbox" name="" id="">
-                  <a class="dropdown-item" href="#">全職 - 餐飲主管</a>
-                </li>
-
-                <li>
-                  <input type="checkbox" name="" id="">
-                  <a class="dropdown-item" href="#">全職 - 餐飲主管</a>
-                </li>
-                <li>
-                  <input type="checkbox" name="" id="">
-                  <a class="dropdown-item" href="#">全職 - 餐飲主管</a>
-                </li>
-                <li>
-                  <input type="checkbox" name="" id="">
-                  <a class="dropdown-item" href="#">全職 - 餐飲主管</a>
-                </li>
-                <li>
-                  <input type="checkbox" name="" id="">
-                  <a class="dropdown-item" href="#">全職 - 餐飲主管</a>
-                </li>
-                <li>
-                  <input type="checkbox" name="" id="">
-                  <a class="dropdown-item" href="#">全職 - 餐飲主管</a>
-                </li>
-                <li>
-                  <input type="checkbox" name="" id="">
-                  <a class="dropdown-item" href="#">全職 - 餐飲主管</a>
-                </li>
-                <li>
-                  <input type="checkbox" name="" id="">
-                  <a class="dropdown-item" href="#">全職 - 餐飲主管</a>
-                </li>
-
-                <li>
-                  <input type="checkbox" name="" id="">
-                  <a class="dropdown-item" href="#">全職 - 餐飲主管</a>
-                </li>
-
-              </ul>
-            </div>
-
-
-       
-              <div class="title">
-                <div class="workname">
-                  職務名稱
-                </div>
-                <div class="workplace">
+            <div class="dropdown_area">
+              <div class="mydropdown">
+                <button class="btn btn-close-white mydropdown-toggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   工作地區
-                </div>
-                <div class="date">
-                  刊登日期
-                </div>
+                </button>
+                <ul class="mydropdown-menu dropdown-menu">
+                  <li>
+                    <input type="checkbox" name="" id="">
+                    <a class="dropdown-item mydropitem" href="#">台北市-中山區</a>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="">
+                    <a class="dropdown-item mydropitem" href="#">台北市-大安區</a>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="">
+                    <a class="dropdown-item mydropitem" href="#">台北市-松山區</a>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="">
+                    <a class="dropdown-item mydropitem" href="#">台北市-松山區 </a>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="">
+                    <a class="dropdown-item mydropitem" href="#">台北市-南港區 </a>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="">
+                    <a class="dropdown-item mydropitem" href="#">台北市-士林區 </a>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="">
+                    <a class="dropdown-item mydropitem" href="#">台北市-北投區 </a>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="">
+                    <a class="dropdown-item mydropitem" href="#">台北市-文山區 </a>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="">
+                    <a class="dropdown-item mydropitem" href="#">台北市-萬華區 </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mydropdown">
+                <button class="btn btn-close-white mydropdown-toggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  職務類別
+                </button>
+                <ul class="mydropdown-menu dropdown-menu">
+
+                  <li>
+                    <input type="checkbox" name="" id="">
+                    <a class="dropdown-item mydropitem" href="#">全職 - 餐飲服務人員</a>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="">
+                    <a class="dropdown-item mydropitem" href="#">全職 - 門市／店員／專櫃人員</a>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="">
+                    <a class="dropdown-item mydropitem" href="#">全職 - 飲品調製販售員</a>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="">
+                    <a class="dropdown-item mydropitem" href="#">全職 - 儲備幹部</a>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="">
+                    <a class="dropdown-item mydropitem" href="#">全職 - 賣場管理人員</a>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="">
+                    <a class="dropdown-item" href="#">全職 - 餐飲主管</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+
+
+
+            <div class="title">
+              <div class="workname">
+                職務名稱
+              </div>
+              <div class="workplace">
+                工作地區
+              </div>
+              <div class="date">
+                刊登日期
+              </div>
             </div>
 
             <ul class="work_list">
@@ -759,27 +730,245 @@
                 <a href="" class="workname">【香繼光集團】北區門市儲備主管薪37400元起</a>
                 <a href="" class="workplace">台北市-中山區</a>
                 <span class="date">08/04</span>
-                <div class="work_detail">
-                  <span class="treament">
-                    工作待遇：月薪 37,400 至 39,400 元
-                  </span>
-                  <p class="workdesc">●完整透明升遷制度
-                    ●入股當股東(內創合作店、內創加盟店)
-                    ●績效獎金、年終獎金、生日獎金
-                    ●春酒、季度聚餐、員工旅遊補助
-                    ●海外門市外派機會.....</p>
 
+                <div class="work_detail">
+                  <div class="workdesc">
+                    <span class="treatment">
+                      工作待遇：月薪 37,400 至 39,400 元
+                    </span>
+                    <p>●完整透明升遷制度
+                      ●入股當股東(內創合作店、內創加盟店)
+                      ●績效獎金、年終獎金、生日獎金
+                      ●春酒、季度聚餐、員工旅遊補助
+                      ●海外門市外派機會.....</p>
+                  </div>
+
+                  <div class="btn_group">
                     <a class="savework">
+                      <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="18"
+                        height="19" viewBox="0 0 18 19" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M12.1149 3.50785C13.2819 3.50333 14.4019 3.96769 15.224 4.79689C16.046 5.62608 16.5014 6.75079 16.488 7.91895C16.4863 9.0375 16.0877 10.1191 15.3635 10.9708C15.3027 11.0442 15.2081 11.1429 15.0859 11.2621L14.8062 11.5265L14.4632 11.8375L13.8536 12.3729L12.673 13.3796L10.9548 14.81L9.43269 16.0573C9.17669 16.27 8.80573 16.27 8.54973 16.0573L6.55121 14.4162L5.30946 13.3796L4.35202 12.5656L3.71105 12.0078L3.17627 11.5265L2.89656 11.2621C2.7743 11.1429 2.67975 11.0442 2.61895 10.9708C1.89468 10.1191 1.49615 9.0375 1.49443 7.91895C1.48103 6.75079 1.93639 5.62608 2.75845 4.79689C3.58052 3.96769 4.70055 3.50333 5.86755 3.50785C6.84151 3.52766 7.77584 3.89764 8.49975 4.55019C8.75861 4.78069 9.14885 4.78069 9.4077 4.55019C10.0811 3.94342 10.9362 3.58142 11.8353 3.51777L12.1149 3.50785ZM12.0907 4.43834C11.405 4.44519 10.7428 4.6773 10.2014 5.09825L10.0256 5.24552C9.45261 5.75572 8.607 5.78761 7.9965 5.33807L7.87768 5.24175C7.31966 4.73874 6.59945 4.45354 5.86396 4.43845C4.94597 4.4349 4.06493 4.80018 3.41829 5.45243C2.77165 6.10468 2.41347 6.98938 2.42406 7.91751C2.42545 8.8155 2.74539 9.68382 3.33444 10.3767L3.3782 10.427L3.49882 10.553L3.75835 10.8023L4.10554 11.1184L4.53294 11.4955L5.21468 12.0828L6.66564 13.3033L8.99021 15.2165L10.4152 14.0499L11.6174 13.0526L12.6761 12.1606L13.2267 11.6884L13.845 11.1461L14.313 10.7177L14.4845 10.5511L14.6111 10.4188L14.6556 10.3676C15.237 9.68382 15.557 8.8155 15.5584 7.90826C15.569 6.98938 15.2108 6.10468 14.5641 5.45243C13.9672 4.85035 13.1706 4.4928 12.3267 4.44415L12.0907 4.43834Z"
+                          fill="#FA1E50"></path>
+                      </svg>
                       收藏職缺
                     </a>
-                    <a href="" class="apply"></a>
+                    <a href="" class="apply">蛤不快投</a>
+                  </div>
 
                 </div>
 
 
               </li>
+              <li class="work">
+                <a href="" class="workname">門市夥伴[士林區](CoCo都可)</a>
+                <a href="" class="workplace">台北市-士林區</a>
+                <span class="date">08/04</span>
 
+                <div class="work_detail">
+                  <div class="workdesc">
+                    <span class="treatment">
+                      工作待遇：月薪 37,400 至 39,400 元
+                    </span>
+                    <p>歡迎加入全球最大連鎖茶飲品牌
+                      相信您在此一定有一展長才的機會
+                      
+                      1.接受完整茶飲、備料專業訓練
+                      2.與同仁並肩合作執行各類飲品調製、銷售與顧客服務.....</p>
+                  </div>
+
+                  <div class="btn_group">
+                    <a class="savework">
+                      <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="18"
+                        height="19" viewBox="0 0 18 19" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M12.1149 3.50785C13.2819 3.50333 14.4019 3.96769 15.224 4.79689C16.046 5.62608 16.5014 6.75079 16.488 7.91895C16.4863 9.0375 16.0877 10.1191 15.3635 10.9708C15.3027 11.0442 15.2081 11.1429 15.0859 11.2621L14.8062 11.5265L14.4632 11.8375L13.8536 12.3729L12.673 13.3796L10.9548 14.81L9.43269 16.0573C9.17669 16.27 8.80573 16.27 8.54973 16.0573L6.55121 14.4162L5.30946 13.3796L4.35202 12.5656L3.71105 12.0078L3.17627 11.5265L2.89656 11.2621C2.7743 11.1429 2.67975 11.0442 2.61895 10.9708C1.89468 10.1191 1.49615 9.0375 1.49443 7.91895C1.48103 6.75079 1.93639 5.62608 2.75845 4.79689C3.58052 3.96769 4.70055 3.50333 5.86755 3.50785C6.84151 3.52766 7.77584 3.89764 8.49975 4.55019C8.75861 4.78069 9.14885 4.78069 9.4077 4.55019C10.0811 3.94342 10.9362 3.58142 11.8353 3.51777L12.1149 3.50785ZM12.0907 4.43834C11.405 4.44519 10.7428 4.6773 10.2014 5.09825L10.0256 5.24552C9.45261 5.75572 8.607 5.78761 7.9965 5.33807L7.87768 5.24175C7.31966 4.73874 6.59945 4.45354 5.86396 4.43845C4.94597 4.4349 4.06493 4.80018 3.41829 5.45243C2.77165 6.10468 2.41347 6.98938 2.42406 7.91751C2.42545 8.8155 2.74539 9.68382 3.33444 10.3767L3.3782 10.427L3.49882 10.553L3.75835 10.8023L4.10554 11.1184L4.53294 11.4955L5.21468 12.0828L6.66564 13.3033L8.99021 15.2165L10.4152 14.0499L11.6174 13.0526L12.6761 12.1606L13.2267 11.6884L13.845 11.1461L14.313 10.7177L14.4845 10.5511L14.6111 10.4188L14.6556 10.3676C15.237 9.68382 15.557 8.8155 15.5584 7.90826C15.569 6.98938 15.2108 6.10468 14.5641 5.45243C13.9672 4.85035 13.1706 4.4928 12.3267 4.44415L12.0907 4.43834Z"
+                          fill="#FA1E50"></path>
+                      </svg>
+                      收藏職缺
+                    </a>
+                    <a href="" class="apply">蛤不快投</a>
+                  </div>
+
+                </div>
+
+
+              </li>
+              <li class="work">
+                <a href="" class="workname">門市兼職[松山區](CoCo都可)</a>
+                <a href="" class="workplace">台北市-松山區</a>
+                <span class="date">08/04</span>
+
+                <div class="work_detail">
+                  <div class="workdesc">
+                    <span class="treatment">
+                      工作待遇：月薪 37,400 至 39,400 元
+                    </span>
+                    <p>★就是要你 YOU ARE THE ONE★
+                      強力邀請優質＆具潛力的你加入，未來有轉為正職的機會
+                      ★配合公司發展，成為長期事業發展的夥伴★
+                      
+                      1. 學習與執行飲.....</p>
+                  </div>
+
+                  <div class="btn_group">
+                    <a class="savework">
+                      <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="18"
+                        height="19" viewBox="0 0 18 19" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M12.1149 3.50785C13.2819 3.50333 14.4019 3.96769 15.224 4.79689C16.046 5.62608 16.5014 6.75079 16.488 7.91895C16.4863 9.0375 16.0877 10.1191 15.3635 10.9708C15.3027 11.0442 15.2081 11.1429 15.0859 11.2621L14.8062 11.5265L14.4632 11.8375L13.8536 12.3729L12.673 13.3796L10.9548 14.81L9.43269 16.0573C9.17669 16.27 8.80573 16.27 8.54973 16.0573L6.55121 14.4162L5.30946 13.3796L4.35202 12.5656L3.71105 12.0078L3.17627 11.5265L2.89656 11.2621C2.7743 11.1429 2.67975 11.0442 2.61895 10.9708C1.89468 10.1191 1.49615 9.0375 1.49443 7.91895C1.48103 6.75079 1.93639 5.62608 2.75845 4.79689C3.58052 3.96769 4.70055 3.50333 5.86755 3.50785C6.84151 3.52766 7.77584 3.89764 8.49975 4.55019C8.75861 4.78069 9.14885 4.78069 9.4077 4.55019C10.0811 3.94342 10.9362 3.58142 11.8353 3.51777L12.1149 3.50785ZM12.0907 4.43834C11.405 4.44519 10.7428 4.6773 10.2014 5.09825L10.0256 5.24552C9.45261 5.75572 8.607 5.78761 7.9965 5.33807L7.87768 5.24175C7.31966 4.73874 6.59945 4.45354 5.86396 4.43845C4.94597 4.4349 4.06493 4.80018 3.41829 5.45243C2.77165 6.10468 2.41347 6.98938 2.42406 7.91751C2.42545 8.8155 2.74539 9.68382 3.33444 10.3767L3.3782 10.427L3.49882 10.553L3.75835 10.8023L4.10554 11.1184L4.53294 11.4955L5.21468 12.0828L6.66564 13.3033L8.99021 15.2165L10.4152 14.0499L11.6174 13.0526L12.6761 12.1606L13.2267 11.6884L13.845 11.1461L14.313 10.7177L14.4845 10.5511L14.6111 10.4188L14.6556 10.3676C15.237 9.68382 15.557 8.8155 15.5584 7.90826C15.569 6.98938 15.2108 6.10468 14.5641 5.45243C13.9672 4.85035 13.1706 4.4928 12.3267 4.44415L12.0907 4.43834Z"
+                          fill="#FA1E50"></path>
+                      </svg>
+                      收藏職缺
+                    </a>
+                    <a href="" class="apply">蛤不快投</a>
+                  </div>
+
+                </div>
+
+
+              </li>
+              <li class="work">
+                <a href="" class="workname">【CoCo都可】儲備幹部[桃園龜山區]</a>
+                <a href="" class="workplace">桃園市-龜山區</a>
+                <span class="date">08/07</span>
+
+                <div class="work_detail">
+                  <div class="workdesc">
+                    <span class="treatment">
+                      工作待遇：月薪 34,000 至 45,000 元
+                    </span>
+                    <p>歡迎加入全球最大連鎖茶飲品牌
+                      相信您在此一定有一展長才的機會
+                      
+                      1.負責門市營運、銷售與物料資產管理、達成公司交付任務與目標
+                      2.與同仁並肩合作執.....</p>
+                  </div>
+
+                  <div class="btn_group">
+                    <a class="savework">
+                      <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="18"
+                        height="19" viewBox="0 0 18 19" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M12.1149 3.50785C13.2819 3.50333 14.4019 3.96769 15.224 4.79689C16.046 5.62608 16.5014 6.75079 16.488 7.91895C16.4863 9.0375 16.0877 10.1191 15.3635 10.9708C15.3027 11.0442 15.2081 11.1429 15.0859 11.2621L14.8062 11.5265L14.4632 11.8375L13.8536 12.3729L12.673 13.3796L10.9548 14.81L9.43269 16.0573C9.17669 16.27 8.80573 16.27 8.54973 16.0573L6.55121 14.4162L5.30946 13.3796L4.35202 12.5656L3.71105 12.0078L3.17627 11.5265L2.89656 11.2621C2.7743 11.1429 2.67975 11.0442 2.61895 10.9708C1.89468 10.1191 1.49615 9.0375 1.49443 7.91895C1.48103 6.75079 1.93639 5.62608 2.75845 4.79689C3.58052 3.96769 4.70055 3.50333 5.86755 3.50785C6.84151 3.52766 7.77584 3.89764 8.49975 4.55019C8.75861 4.78069 9.14885 4.78069 9.4077 4.55019C10.0811 3.94342 10.9362 3.58142 11.8353 3.51777L12.1149 3.50785ZM12.0907 4.43834C11.405 4.44519 10.7428 4.6773 10.2014 5.09825L10.0256 5.24552C9.45261 5.75572 8.607 5.78761 7.9965 5.33807L7.87768 5.24175C7.31966 4.73874 6.59945 4.45354 5.86396 4.43845C4.94597 4.4349 4.06493 4.80018 3.41829 5.45243C2.77165 6.10468 2.41347 6.98938 2.42406 7.91751C2.42545 8.8155 2.74539 9.68382 3.33444 10.3767L3.3782 10.427L3.49882 10.553L3.75835 10.8023L4.10554 11.1184L4.53294 11.4955L5.21468 12.0828L6.66564 13.3033L8.99021 15.2165L10.4152 14.0499L11.6174 13.0526L12.6761 12.1606L13.2267 11.6884L13.845 11.1461L14.313 10.7177L14.4845 10.5511L14.6111 10.4188L14.6556 10.3676C15.237 9.68382 15.557 8.8155 15.5584 7.90826C15.569 6.98938 15.2108 6.10468 14.5641 5.45243C13.9672 4.85035 13.1706 4.4928 12.3267 4.44415L12.0907 4.43834Z"
+                          fill="#FA1E50"></path>
+                      </svg>
+                      收藏職缺
+                    </a>
+                    <a href="" class="apply">蛤不快投</a>
+                  </div>
+
+                </div>
+
+
+              </li>
+              <li class="work">
+                <a href="" class="workname">【CoCo都可】儲備幹部[新竹地區]</a>
+                <a href="" class="workplace">新竹市-全區</a>
+                <span class="date">08/07</span>
+
+                <div class="work_detail">
+                  <div class="workdesc">
+                    <span class="treatment">
+                      工作待遇：月薪 34,000 至 45,000 元
+                    </span>
+                    <p>●完整透明升遷制度
+                      ●入股當股東(內創合作店、內創加盟店)
+                      ●績效獎金、年終獎金、生日獎金
+                      ●春酒、季度聚餐、員工旅遊補助
+                      ●海外門市外派機會.....</p>
+                  </div>
+
+                  <div class="btn_group">
+                    <a class="savework">
+                      <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="18"
+                        height="19" viewBox="0 0 18 19" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M12.1149 3.50785C13.2819 3.50333 14.4019 3.96769 15.224 4.79689C16.046 5.62608 16.5014 6.75079 16.488 7.91895C16.4863 9.0375 16.0877 10.1191 15.3635 10.9708C15.3027 11.0442 15.2081 11.1429 15.0859 11.2621L14.8062 11.5265L14.4632 11.8375L13.8536 12.3729L12.673 13.3796L10.9548 14.81L9.43269 16.0573C9.17669 16.27 8.80573 16.27 8.54973 16.0573L6.55121 14.4162L5.30946 13.3796L4.35202 12.5656L3.71105 12.0078L3.17627 11.5265L2.89656 11.2621C2.7743 11.1429 2.67975 11.0442 2.61895 10.9708C1.89468 10.1191 1.49615 9.0375 1.49443 7.91895C1.48103 6.75079 1.93639 5.62608 2.75845 4.79689C3.58052 3.96769 4.70055 3.50333 5.86755 3.50785C6.84151 3.52766 7.77584 3.89764 8.49975 4.55019C8.75861 4.78069 9.14885 4.78069 9.4077 4.55019C10.0811 3.94342 10.9362 3.58142 11.8353 3.51777L12.1149 3.50785ZM12.0907 4.43834C11.405 4.44519 10.7428 4.6773 10.2014 5.09825L10.0256 5.24552C9.45261 5.75572 8.607 5.78761 7.9965 5.33807L7.87768 5.24175C7.31966 4.73874 6.59945 4.45354 5.86396 4.43845C4.94597 4.4349 4.06493 4.80018 3.41829 5.45243C2.77165 6.10468 2.41347 6.98938 2.42406 7.91751C2.42545 8.8155 2.74539 9.68382 3.33444 10.3767L3.3782 10.427L3.49882 10.553L3.75835 10.8023L4.10554 11.1184L4.53294 11.4955L5.21468 12.0828L6.66564 13.3033L8.99021 15.2165L10.4152 14.0499L11.6174 13.0526L12.6761 12.1606L13.2267 11.6884L13.845 11.1461L14.313 10.7177L14.4845 10.5511L14.6111 10.4188L14.6556 10.3676C15.237 9.68382 15.557 8.8155 15.5584 7.90826C15.569 6.98938 15.2108 6.10468 14.5641 5.45243C13.9672 4.85035 13.1706 4.4928 12.3267 4.44415L12.0907 4.43834Z"
+                          fill="#FA1E50"></path>
+                      </svg>
+                      收藏職缺
+                    </a>
+                    <a href="" class="apply">蛤不快投</a>
+                  </div>
+
+                </div>
+
+
+              </li>
             </ul>
+
+            <div class="pagination_area">
+              <div class="report">
+                <span>發現公司有問題嗎?</span>
+                <a href="">我要檢舉</a>
+              </div>
+              <div class="pagination">
+
+                <a href="" class="prevpage">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6"
+                    height="10" viewBox="0 0 6 10" version="1.1">
+                    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+                    <title>ic-left</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Job-vacancy-/-PC-/-Style2" transform="translate(-232.000000, -628.000000)" fill="#333333"
+                        fill-rule="nonzero">
+                        <g id="Group" transform="translate(232.000000, 622.000000)">
+                          <g id="展開全部">
+                            <g id="ic-left"
+                              transform="translate(3.500000, 11.000000) rotate(90.000000) translate(-3.500000, -11.000000) translate(-1.500000, 7.500000)">
+                              <path
+                                d="M7.04840234,7.82419766 C7.28268283,7.58991717 7.28268283,7.21007345 7.04840234,6.97579297 L3.69680938,3.6242 L3.69680938,3.6242 L7.04840234,0.272607031 C7.28268283,0.038326546 7.28268283,-0.341517171 7.04840234,-0.575797656 C6.81412186,-0.810078142 6.43427814,-0.810078142 6.19999766,-0.575797656 L2,3.6242 L2,3.6242 L6.19999766,7.82419766 C6.43427814,8.05847814 6.81412186,8.05847814 7.04840234,7.82419766 Z"
+                                id="Path"
+                                transform="translate(4.736302, 3.624200) rotate(270.000000) translate(-4.736302, -3.624200) ">
+                              </path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  上一頁
+                </a>
+                <span class="pagecount">
+                  第
+                  <span>1 / 4</span>
+                  頁
+                </span>
+                <a href="" class="nextpage">
+                  下一頁
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6"
+                    height="10" viewBox="0 0 6 10" version="1.1">
+                    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+                    <title>ic-right</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Job-vacancy-/-PC-/-Style2" transform="translate(-495.000000, -628.000000)" fill="#333333"
+                        fill-rule="nonzero">
+                        <g id="Group" transform="translate(232.000000, 622.000000)">
+                          <g id="展開全部" transform="translate(214.000000, 0.000000)">
+                            <g id="ic-right"
+                              transform="translate(51.500000, 11.000000) scale(-1, 1) rotate(90.000000) translate(-51.500000, -11.000000) translate(46.500000, 7.500000)">
+                              <path
+                                d="M7.04840234,7.82419766 C7.28268283,7.58991717 7.28268283,7.21007345 7.04840234,6.97579297 L3.69680938,3.6242 L3.69680938,3.6242 L7.04840234,0.272607031 C7.28268283,0.038326546 7.28268283,-0.341517171 7.04840234,-0.575797656 C6.81412186,-0.810078142 6.43427814,-0.810078142 6.19999766,-0.575797656 L2,3.6242 L2,3.6242 L6.19999766,7.82419766 C6.43427814,8.05847814 6.81412186,8.05847814 7.04840234,7.82419766 Z"
+                                id="Path"
+                                transform="translate(4.736302, 3.624200) rotate(270.000000) translate(-4.736302, -3.624200) ">
+                              </path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+
+
+
+
+
+            </div>
 
 
           </div>
@@ -788,7 +977,7 @@
 
         <div id="sidebar">
 
-          
+
 
           <div class="environment_area">
 
@@ -797,13 +986,15 @@
                 環境照片
                 <span>共2張</span>
               </p>
-              
+
             </div>
 
             <div id="carouselExampleIndicators" class="carousel slide">
               <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -812,139 +1003,144 @@
                 <div class="carousel-item">
                   <img src="imgs/environment_pic_1.jpg" class="d-block w-100" alt="...">
                 </div>
-            
+
               </div>
               <div class="control prev">
-                  <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <i class="fa-solid fa-angle-left"></i>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
+                <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev">
+                  <i class="fa-solid fa-angle-left"></i>
+                  <span class="visually-hidden">Previous</span>
+                </button>
               </div>
               <div class="control next">
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span class="visually-hidden bg-black">Next</span>
-                  </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next">
+                  <i class="fa-solid fa-angle-right"></i>
+                  <span class="visually-hidden bg-black">Next</span>
+                </button>
               </div>
             </div>
           </div>
 
-     
-        
+
+
 
 
           <!-- 相似公司 -->
-          <div id="compush" class="comp-sidebox">
-            <div class="comp-title">相似公司</div>
+          <div class="similar_company">
+            <div class="title">相似公司</div>
+
             <ul class="similar">
-              <li style="display:none;"><a href="https://www.518.com.tw/company-LDW46D.html" target="_blank"
-                  title="迷客夏飲品(亞享實業有限公司)">迷客夏飲品(亞享實業有限公司)</a><span>台南市-北區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-E60z01.html" target="_blank"
-                  title="八方雲集餐飲股份有限公司">八方雲集餐飲股份有限公司</a><span>新北市-淡水區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-L9xZKl.html" target="_blank"
-                  title="三商餐飲股份有限公司">三商餐飲股份有限公司</a><span>台北市-中山區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-ynAY2d.html" target="_blank"
-                  title="雲雀國際股份有限公司">雲雀國際股份有限公司</a><span>台北市-南港區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-GVoOeW.html" target="_blank"
-                  title="Tea-Top第一味_珍鼎記茶飲股份有限公司">Tea-Top第一味_珍鼎記茶飲股份有限公司</a><span>台中市-北屯區</span></li>
-              <li style=""><a href="https://www.518.com.tw/company-GWvxoO.html" target="_blank"
-                  title="烏弄原生茶飲">烏弄原生茶飲</a><span>高雄市-左營區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-zJ1r9X.html" target="_blank"
-                  title="可不可熟成紅茶北區_慢藏茶業有限公司">可不可熟成紅茶北區_慢藏茶業有限公司</a><span>台北市-中山區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-yvJgVE.html" target="_blank"
-                  title="新山事業有限公司">新山事業有限公司</a><span>嘉義市-東區</span></li>
-              <li style=""><a href="https://www.518.com.tw/company-yExXe3.html" target="_blank"
-                  title="王品餐飲股份有限公司">王品餐飲股份有限公司</a><span>台中市-西區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-G7JJP1.html" target="_blank"
-                  title="里歐歐式早餐店">里歐歐式早餐店</a><span>高雄市-前鎮區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-GK3ZaV.html" target="_blank"
-                  title="呷尚寶興業股份有限公司">呷尚寶興業股份有限公司</a><span>新北市-土城區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-w038lq.html" target="_blank"
-                  title="路易莎職人咖啡股份有限公司">路易莎職人咖啡股份有限公司</a><span>新北市-新莊區</span></li>
-              <li style=""><a href="https://www.518.com.tw/company-ydDrAy.html" target="_blank"
-                  title="米哥烘焙坊">米哥烘焙坊</a><span>新北市-三重區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-Goe8eL.html" target="_blank"
-                  title="華香有限公司">華香有限公司</a><span>台北市-中山區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-LkB827.html" target="_blank"
-                  title="饗樂餐飲實業股份有限公司">饗樂餐飲實業股份有限公司</a><span>新北市-三重區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-G0lqY1.html" target="_blank"
-                  title="一鮮堅持屋/22好食刻(鑫飽食品有限公司)">一鮮堅持屋/22好食刻(鑫飽食品有限公司)</a><span>台中市-烏日區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-N6grxx.html" target="_blank"
-                  title="力天世紀餐飲有限公司">力天世紀餐飲有限公司</a><span>嘉義縣-民雄鄉</span></li>
-              <li style=""><a href="https://www.518.com.tw/company-y293Mp.html" target="_blank"
-                  title="COMEBUY_世界專業現泡茶專賣店(光明茶坊)">COMEBUY_世界專業現泡茶專賣店(光明茶坊)</a><span>新北市-土城區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-y5aDre.html" target="_blank"
-                  title="勝博殿_勝成餐飲股份有限公司">勝博殿_勝成餐飲股份有限公司</a><span>台北市-內湖區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-G0rR51.html" target="_blank"
-                  title="五花馬國際行銷股份有限公司">五花馬國際行銷股份有限公司</a><span>台南市-新化區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-LrbZ3d.html" target="_blank"
-                  title="巧瑋有限公司">巧瑋有限公司</a><span>新竹縣-竹北市</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-yeMJ4P.html" target="_blank"
-                  title="麻古茶坊股份有限公司">麻古茶坊股份有限公司</a><span>高雄市-左營區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-yY852g.html" target="_blank"
-                  title="小蒙牛股份有限公司">小蒙牛股份有限公司</a><span>新北市-中和區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-E6Kdd2.html" target="_blank"
-                  title="巧瑋有限公司｜小木屋鬆餅湖口王爺壟">巧瑋有限公司｜小木屋鬆餅湖口王爺壟</a><span>新竹縣-竹北市</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-ywKWQg.html" target="_blank"
-                  title="喜樂牛排有限公司">喜樂牛排有限公司</a><span>新北市-林口區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-2Jjakp.html" target="_blank"
-                  title="可不可熟成紅茶(永醇誠股份有限公司)">可不可熟成紅茶(永醇誠股份有限公司)</a><span>台中市-北屯區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-9WBdEl.html" target="_blank"
-                  title="樂多多集團_樂多多世界股份有限公司">樂多多集團_樂多多世界股份有限公司</a><span>新北市-汐止區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-GQZd5m.html" target="_blank"
-                  title="鮮自然企業有限公司">鮮自然企業有限公司</a><span>台南市-東區</span></li>
-              <li style=""><a href="https://www.518.com.tw/company-LzkYpZ.html" target="_blank"
-                  title="貳樓餐飲股份有限公司">貳樓餐飲股份有限公司</a><span>台北市-中正區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-LDkzzM.html" target="_blank"
-                  title="檸檬草美食茶房(千禧年泡沫紅茶店)">檸檬草美食茶房(千禧年泡沫紅茶店)</a><span>新北市-板橋區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-yBBJ5D.html" target="_blank"
-                  title="皇廚餐飲股份有限公司">皇廚餐飲股份有限公司</a><span>台北市-中山區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-yY15k2.html" target="_blank"
-                  title="馥漫麵包花園(倍逢麫包店)">馥漫麵包花園(倍逢麫包店)</a><span>台中市-南屯區</span></li>
-              <li style=""><a href="https://www.518.com.tw/company-NAPwEL.html" target="_blank"
-                  title="久香食品有限公司">久香食品有限公司</a><span>台中市-沙鹿區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-yE9QpZ.html" target="_blank"
-                  title="久沃國際投資有限公司">久沃國際投資有限公司</a><span>高雄市-三民區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-0ZB86d.html" target="_blank"
-                  title="王座國際餐飲股份有限公司">王座國際餐飲股份有限公司</a><span>台北市-信義區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-NJv9m5.html" target="_blank"
-                  title="安格斯牛排館">安格斯牛排館</a><span>新北市-板橋區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-NPxolO.html" target="_blank"
-                  title="黑沃餐飲股份有限公司">黑沃餐飲股份有限公司</a><span>台中市-南區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-NPdQbA.html" target="_blank"
-                  title="一手私藏世界紅茶(一手國際茶飲有限公司)">一手私藏世界紅茶(一手國際茶飲有限公司)</a><span>台南市-中西區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-GVozRv.html" target="_blank"
-                  title="大埔鐵板燒">大埔鐵板燒</a><span>台中市-大里區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-yvYXJj.html" target="_blank"
-                  title="三澧企業股份有限公司">三澧企業股份有限公司</a><span>台北市-中山區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-LDDa5b.html" target="_blank"
-                  title="CoCo都可(億巨國際股份有限公司)">CoCo都可(億巨國際股份有限公司)</a><span>台北市-士林區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-LmbEzE.html" target="_blank"
-                  title="時躍有限公司">時躍有限公司</a><span>台南市-永康區</span></li>
-              <li style=""><a href="https://www.518.com.tw/company-L9724G.html" target="_blank"
-                  title="韓二寶">韓二寶</a><span>台北市-中山區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-LgavYB.html" target="_blank"
-                  title="秘町無煙炭火燒肉(秘苑小吃店)">秘町無煙炭火燒肉(秘苑小吃店)</a><span>高雄市-新興區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-GVBaVG.html" target="_blank"
-                  title="鬍鬚張股份有限公司">鬍鬚張股份有限公司</a><span>新北市-五股區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-bdDwzq.html" target="_blank"
-                  title="黑浮國際餐飲集團(辰鎧國際餐飲顧問有限公司)">黑浮國際餐飲集團(辰鎧國際餐飲顧問有限公司)</a><span>高雄市-左營區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-GonwwX.html" target="_blank"
-                  title="夢想街餐飲有限公司">夢想街餐飲有限公司</a><span>新北市-蘆洲區</span></li>
-              <li style=""><a href="https://www.518.com.tw/company-GRK5kD.html" target="_blank"
-                  title="摩斯漢堡_安心食品服務股份有限公司">摩斯漢堡_安心食品服務股份有限公司</a><span>台北市-大安區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-2JKgo8.html" target="_blank"
-                  title="可不可熟成紅茶_向醇有限公司">可不可熟成紅茶_向醇有限公司</a><span>台中市-北屯區</span></li>
-              <li style="display:none;"><a href="https://www.518.com.tw/company-L92opx.html" target="_blank"
-                  title="台茶1号_有茂企業有限公司">台茶1号_有茂企業有限公司</a><span>台中市-潭子區</span></li>
+              <li>
+                <a href="">華香有限公司</a>
+                <span>台北市-中山區</span>
+              </li>
+
+              <li>
+                <a href="">饗樂餐飲實業股份有限公司</a>
+                <span>新北市-三重區</span>
+              </li>
+              <li>
+                <a href="">饗樂餐飲實業股份有限公司</a>
+                <span>新北市-三重區</span>
+              </li>
+              <li>
+                <a href="">樂多多集團_樂多多世界股份有限公司</a>
+                <span>新北市-汐止區</span>
+              </li>
             </ul>
           </div>
         </div>
 
 
+
+
       </div>
     </div>
   </div>
+
+
+  <footer>
+    <div class="container">
+        <div class="row footer-top-content  footer-content">
+            <div class=" footer-box logo-box col-6">
+
+                <img class="qrcode-img" src="./img/ic_q_rcode.jpg" alt="qr-code">
+                <div class="app-inbox">
+                    <h5 class="title">666蛤班<br>官方LINE</h5>
+
+                </div>
+            </div>
+            <div class="href-wrap footer-box col-6">
+                <div class="href-box">
+                    <h6 class="title">關於我們</h6>
+                    <a href="#">蛤班簡介</a>
+                    <a href="#">徵才方案</a>
+                    <a href="#">加入我們</a>
+                    <a href="#">網站地圖</a>
+                </div>
+                <div class="href-box">
+                    <h6 class="title">服務專區</h6>
+                    <a href="#" target="_blank">地區找工作</a>
+                    <a href="#" target="_blank">產業找工作</a>
+                    <a href="#" target="_blank">職務找工作</a>
+                    <a href="#" target="_blank">幫助中心</a>
+                </div>
+                <div class="href-box">
+                    <h6 class="title">會員條款</h6>
+                    <a href="#">刊登契約</a>
+                    <a href="#">免責聲明</a>
+                    <a href="#">服務條款</a>
+                    <a href="#">隱私權聲明</a>
+                </div>
+                <div class="href-box">
+                    <h6 class="title">合作專區</h6>
+                    <a href="#">廣告合作</a>
+                    <a href="#">申訴專線</a>
+                    <a href="#">網站公告</a>
+                    <a href="#">投資者專區 </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-content">
+            <div class="footer-bottom-top-wrap">
+                <div class="row footer-content">
+                    <div class="footer-box col-lg-8   col-6">
+                        <a href="#"><img class="logo-img" src="./img/logo_666_b_white.png"
+                                alt="蛤班 logo"></a>
+                        <p class="slogan">下班店長請指示</p>
+                    </div>
+                    <div class="footer-box justify-content-end col-lg-4 col-6">
+                        <a href="#" target="_blank">
+                            <img class="media-img" src="./img/ic_ig.svg" alt="蛤班 IG">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img class="media-img" src="./img/ic_fb.svg" alt="蛤班 FB">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img class="media-img" src="./img/ic_youtube.svg" alt="蛤班 Youtube">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-end-wrap">
+                <div class="copyright">
+                    <p>© 2023 by HaBan Technology Co., Ltd. All Rights Reserved.</p>
+                </div>
+                <div class="text-content">
+                    <p class="is-pc me-4">
+                        客服專線：00-0000-0000
+                    </p>
+                    <p>機構地址 台北市大安區忠孝東路三段xx號xx號樓之x</p>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
 
 
 
