@@ -65,7 +65,7 @@ function resetYMD() {
 function renderDate() {
     //july 改成目前月份
     monthDom.innerHTML=monthArray[currentDate.getMonth()]
-  
+  console.log('chan')
     //抓最後一天也是這個月的天數
     let thisMonthNum = getMonthDateNum()
     //最後一天星期幾
@@ -190,7 +190,7 @@ function getMonthDateNum() {
     return new Date(year, month + 1, 0).getDate()
 
 }
-
+console.log('ren')
 renderDate()
 
 function tdClickFN(year,month,day){
